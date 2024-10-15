@@ -1,21 +1,19 @@
 import { createListCollection } from '@chakra-ui/react';
-import {
-    SelectContent,
-    SelectItem,
-    SelectRoot,
-    SelectTrigger,
-    SelectValueText,
-} from '@/components/ui/select';
+import { SelectContent, SelectItem, SelectRoot, SelectTrigger, SelectValueText } from '@/components/ui/select';
 
 
-export const CategorySelect = () => {
+export const CategorySelect = ({ categories, setCategories }: {
+    categories: string[];
+    setCategories: (e: string[]) => void;
+}) => {
     return (
-        <SelectRoot collection={categories} size="sm" width="320px" multiple={true}>
+        <SelectRoot collection={categoryList} size="sm" width="320px" multiple={true} value={categories}
+                    onValueChange={(e) => setCategories(e.items)}>
             <SelectTrigger>
                 <SelectValueText placeholder="Select category"/>
             </SelectTrigger>
             <SelectContent>
-                {categories.items.map((category) => (
+                {categoryList.items.map((category) => (
                     <SelectItem item={category} key={category.value}>
                         {category.label}
                     </SelectItem>
@@ -25,7 +23,7 @@ export const CategorySelect = () => {
     );
 };
 
-const categories = createListCollection({
+const categoryList = createListCollection({
     items: [
         { value: 'sticker', label: 'Sticker' },
         {

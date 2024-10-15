@@ -16,7 +16,7 @@ export const SearchBar = () => {
 	const [search, setSearch] = useState('');
 	const [dateRange, setDateRange] = useState<Date[]>([]);
 	const [quantity, setQuantity] = useState<number>(0);
-	const [category, setCategory] = useState<string[]>([]);
+	const [categories, setCategories] = useState<string[]>([]);
 	return (
 		<Box w="100%">
 			<Collapsible.Root w="100%">
@@ -72,7 +72,7 @@ export const SearchBar = () => {
 							</Field>
 						</HStack>
 						<Field label="Category">
-							<CategorySelect />
+							<CategorySelect categories={categories} setCategories={setCategories} />
 						</Field>
 					</Box>
 				</Collapsible.Content>
