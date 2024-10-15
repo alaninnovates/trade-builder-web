@@ -1,42 +1,42 @@
 'use client';
 import {
 	Box,
-	Collapse,
-	FormControl,
-	FormLabel,
 	Input,
 	HStack,
-	useDisclosure,
+	Collapsible,
 	Button,
 	IconButton,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { Select } from 'chakra-react-select';
 import { FaSearch } from 'react-icons/fa';
+import { CategorySelect } from '@/app/home/_components/CategorySelect';
+import { Field } from '@/components/ui/field';
 
 export const SearchBar = () => {
-	const { isOpen, onToggle } = useDisclosure();
 	const [search, setSearch] = useState('');
 	const [dateRange, setDateRange] = useState<Date[]>([]);
 	const [quantity, setQuantity] = useState<number>(0);
 	const [category, setCategory] = useState<string[]>([]);
 	return (
 		<Box w="100%">
-			<FormControl w="100%">
+			<Collapsible.Root w="100%">
 				<HStack>
 					<Input
 						placeholder="Search"
 						w="100%"
 						onChange={(e) => setSearch(e.target.value)}
 					/>
-					<IconButton aria-label="Search" icon={<FaSearch />} />
-					<Button onClick={onToggle}>Advanced</Button>
+					<IconButton aria-label="Search">
+						<FaSearch />
+					</IconButton>
+					<Collapsible.Trigger>
+						<Button>Advanced</Button>
+					</Collapsible.Trigger>
 				</HStack>
-				<Collapse in={isOpen} animateOpacity>
+				<Collapsible.Content>
 					<Box p={4} mt={4} bgColor="gray.100" borderRadius="md">
 						<HStack>
-							<Box>
-								<FormLabel>Date Range</FormLabel>
+							<Field label="Date Range">
 								<HStack>
 									<Input
 										type="date"
@@ -61,51 +61,22 @@ export const SearchBar = () => {
 										}
 									/>
 								</HStack>
-							</Box>
-							<Box>
-								<FormLabel>Quantity</FormLabel>
+							</Field>
+							<Field label="Quantity">
 								<Input
 									type="number"
 									onChange={(e) =>
 										setQuantity(parseInt(e.target.value))
 									}
 								/>
-							</Box>
+							</Field>
 						</HStack>
-						<Box>
-							<FormLabel>Category</FormLabel>
-							<Select
-								isMulti
-								name="itemType"
-								options={[
-									{ value: 'sticker', label: 'Sticker' },
-									{
-										value: 'cub_skin',
-										label: 'Cub Skin',
-									},
-									{
-										value: 'hive_skin',
-										label: 'Hive Skin',
-									},
-								]}
-								placeholder="Select category"
-								variant="filled"
-								colorScheme="blue.500"
-								menuPortalTarget={document.body}
-								styles={{
-									menuPortal: (provided) => ({
-										...provided,
-										zIndex: 100,
-									}),
-								}}
-								onChange={(e) =>
-									setCategory(e.map((i) => i.value))
-								}
-							/>
-						</Box>
+						<Field label="Category">
+							<CategorySelect />
+						</Field>
 					</Box>
-				</Collapse>
-			</FormControl>
+				</Collapsible.Content>
+			</Collapsible.Root>
 		</Box>
 	);
 };

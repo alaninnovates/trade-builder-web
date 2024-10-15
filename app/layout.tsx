@@ -1,7 +1,7 @@
-import { Container } from '@chakra-ui/react';
 import { fonts } from './fonts';
 import { Providers } from './providers';
 import { AppLayout } from './ui/AppLayout';
+import React from 'react';
 
 export default function RootLayout({
 	children,

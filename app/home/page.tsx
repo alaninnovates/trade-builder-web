@@ -1,4 +1,3 @@
-'use client';
 import { VStack } from '@chakra-ui/react';
 import { SearchBar } from './_components/SearchBar';
 import { TradeList } from './_components/TradeList';

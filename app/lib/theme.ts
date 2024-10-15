@@ -1,8 +1,12 @@
-import { extendTheme } from '@chakra-ui/react';
+import { createSystem, defaultConfig } from '@chakra-ui/react';
 
-export const theme = extendTheme({
-	fonts: {
-		heading: 'var(--font-rubik)',
-		body: 'var(--font-rubik)',
-	},
+export const system = createSystem(defaultConfig, {
+    theme: {
+        tokens: {
+            fonts: {
+                heading: { value: 'var(--font-rubik)' },
+                body: { value: 'var(--font-rubik)' },
+            },
+        },
+    },
 });
