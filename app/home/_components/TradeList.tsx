@@ -10,7 +10,7 @@ export const TradeList = async () => {
 		return null;
 	}
 
-	return <VStack gap={4} align="stretch">
+	return <VStack gap={4} align="stretch" w="80%">
 		{trades.map((trade) => (
 			<div key={trade._id.toString()}>
 				<Trade trade={trade} />

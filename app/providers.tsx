@@ -8,7 +8,7 @@ export const Providers = (props: { children: React.ReactNode }) => {
     return (
         <ChakraProvider value={defaultSystem}>
             <ThemeProvider attribute="class" disableTransitionOnChange>
-                <Theme appearance="light" colorPalette="orange">
+                <Theme appearance="light" colorPalette="yellow">
                     {props.children}
                 </Theme>
             </ThemeProvider>
