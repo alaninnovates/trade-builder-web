@@ -1,7 +1,7 @@
-import { VStack } from '@chakra-ui/react';
+import { Box, VStack } from '@chakra-ui/react';
 import client from '@/app/lib/db';
 import { PostedTrade } from '@/app/lib/types';
-import { Trade } from '@/app/ui/trade/Trade';
+import { TradeCard } from '@/app/ui/trade/TradeCard';
 
 export const TradeList = async () => {
 	const trades = await getTrades();
@@ -12,9 +12,9 @@ export const TradeList = async () => {
 
 	return <VStack gap={4} align="stretch" w="80%">
 		{trades.map((trade) => (
-			<div key={trade._id.toString()}>
-				<Trade trade={trade} />
-			</div>
+			<Box key={trade._id.toString()}>
+				<TradeCard trade={trade} />
+			</Box>
 		))}
 	</VStack>;
 };
