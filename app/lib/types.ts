@@ -5,6 +5,7 @@ export interface PostedTrade {
     user_id: string;
     user_name: string;
     user_avatar: string;
+    created_at: Date;
     expire_time: Date;
     server_sync: boolean;
     locked: boolean;
