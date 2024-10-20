@@ -29,7 +29,7 @@ export const SearchBar = () => {
 					<IconButton aria-label="Search">
 						<FaSearch />
 					</IconButton>
-					<Collapsible.Trigger>
+					<Collapsible.Trigger asChild>
 						<Button>Advanced</Button>
 					</Collapsible.Trigger>
 				</HStack>
