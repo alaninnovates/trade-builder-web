@@ -1,9 +1,11 @@
 import { PostedTrade } from '@/app/lib/types';
-import { Box, Button, Card, HStack, Stack, Strong, Text } from '@chakra-ui/react';
+import { Box, Button, Card, HStack, Stack, Text } from '@chakra-ui/react';
 import { Avatar } from '@/components/ui/avatar';
+import { Tooltip } from '@/components/ui/tooltip';
 import { Trade } from '@/app/ui/trade/Trade';
 import { FaMessage } from 'react-icons/fa6';
 import { FaBookmark } from 'react-icons/fa';
+import { MdLocalOffer } from 'react-icons/md';
 
 export const TradeCard = ({ trade }: { trade: PostedTrade }) => {
     return (
@@ -26,18 +28,27 @@ export const TradeCard = ({ trade }: { trade: PostedTrade }) => {
                 </HStack>
             </Card.Header>
             <Box bgGradient="to-r" gradientFrom="green.200" gradientTo="blue.200" p={6}>
-                <Trade trade={trade} />
+                <Trade trade={trade}/>
             </Box>
             <Card.Footer pt={4} justifyContent="center" alignItems="center">
                 <HStack gap="2">
-                    <Button variant="subtle">
-                        <FaMessage />
-                    </Button>
-                    <Button variant="subtle">
-                        <FaBookmark />
-                    </Button>
+                    <Tooltip content="Send offer" aria-label="Send offer" openDelay={0}>
+                        <Button variant="subtle">
+                            <MdLocalOffer/>
+                        </Button>
+                    </Tooltip>
+                    <Tooltip content="Send message" aria-label="Send message" openDelay={0}>
+                        <Button variant="subtle">
+                            <FaMessage/>
+                        </Button>
+                    </Tooltip>
+                    <Tooltip content="Bookmark" aria-label="Bookmark" openDelay={0}>
+                        <Button variant="subtle">
+                            <FaBookmark/>
+                        </Button>
+                    </Tooltip>
                 </HStack>
             </Card.Footer>
         </Card.Root>
-    )
-}
+    );
+};
