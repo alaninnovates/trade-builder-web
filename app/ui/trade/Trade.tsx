@@ -1,10 +1,14 @@
-import { PostedTrade } from '@/app/lib/types';
+import { Trade as TradeType } from '@/app/lib/types';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { Box, Flex, Grid, Icon, Text } from '@chakra-ui/react';
 import { ItemBox } from '@/app/ui/trade/ItemBox';
 import { fonts } from '@/app/fonts';
 
-export const Trade = ({ trade }: { trade: PostedTrade }) => {
+export const Trade = ({ trade, editable, onItemRemove }: {
+    trade: TradeType,
+    editable?: boolean,
+    onItemRemove?: (group: 'offering' | 'lookingFor', item: string) => void,
+}) => {
     return (
         <Box w="100%" maxW="3xl" bg="#FEC200" rounded="xl" mt={4} className={fonts.buycat.className}>
             <Box py={6} position="relative">
@@ -24,8 +28,12 @@ export const Trade = ({ trade }: { trade: PostedTrade }) => {
             <Flex p={4} gap={4}>
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
-                    {Object.entries(trade.trade.offering).map(([item, quantity]) => (
-                        <ItemBox key={item} item={item} quantity={quantity}/>
+                    {Object.entries(trade.offering).map(([item, quantity]) => (
+                        <ItemBox key={item} item={item} quantity={quantity} editable={!!editable} onRemove={() => {
+                            if (onItemRemove) {
+                                onItemRemove('offering', item);
+                            }
+                        }}/>
                     ))}
                 </Grid>
                 <Flex flexDir="column" alignItems="center" justifyContent="center" gap={2}>
@@ -38,8 +46,12 @@ export const Trade = ({ trade }: { trade: PostedTrade }) => {
                 </Flex>
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
-                    {Object.entries(trade.trade.lookingFor).map(([item, quantity]) => (
-                        <ItemBox key={item} item={item} quantity={quantity}/>
+                    {Object.entries(trade.lookingFor).map(([item, quantity]) => (
+                        <ItemBox key={item} item={item} quantity={quantity} editable={!!editable} onRemove={() => {
+                            if (onItemRemove) {
+                                onItemRemove('lookingFor', item);
+                            }
+                        }}/>
                     ))}
                 </Grid>
             </Flex>

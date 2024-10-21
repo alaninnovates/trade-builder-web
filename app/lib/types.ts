@@ -1,5 +1,14 @@
 import { ObjectId } from 'bson';
 
+export interface Trade {
+    lookingFor: {
+        [key: string]: number;
+    };
+    offering: {
+        [key: string]: number;
+    };
+}
+
 export interface PostedTrade {
     _id: ObjectId;
     user_id: string;
@@ -9,12 +18,22 @@ export interface PostedTrade {
     expire_time: Date;
     server_sync: boolean;
     locked: boolean;
-    trade: {
-        lookingFor: {
-            [key: string]: number;
-        };
-        offering: {
-            [key: string]: number;
-        };
-    }
+    trade: Trade;
+}
+
+export interface ChatMessage {
+    _id: ObjectId;
+    target: {
+        user_id: string;
+        user_name: string;
+        user_avatar: string;
+    };
+    source: {
+        user_id: string;
+        user_name: string;
+        user_avatar: string;
+    };
+    message: string;
+    trade: Trade;
+    created_at: Date;
 }
