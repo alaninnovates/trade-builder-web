@@ -7,8 +7,8 @@ import React from 'react';
 export const Providers = (props: { children: React.ReactNode }) => {
     return (
         <ChakraProvider value={defaultSystem}>
-            <ThemeProvider attribute="class" disableTransitionOnChange>
-                <Theme appearance="light" colorPalette="yellow">
+            <ThemeProvider attribute="class" disableTransitionOnChange enableSystem={false} enableColorScheme={false}>
+                <Theme colorPalette="yellow">
                     {props.children}
                 </Theme>
             </ThemeProvider>

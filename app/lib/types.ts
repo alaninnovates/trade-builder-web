@@ -34,6 +34,6 @@ export interface ChatMessage {
         user_avatar: string;
     };
     message: string;
-    trade: Trade;
+    trade?: Trade;
     created_at: Date;
 }

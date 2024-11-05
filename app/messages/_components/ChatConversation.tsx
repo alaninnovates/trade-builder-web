@@ -1,6 +1,9 @@
 import { Box, Flex, Input, Separator, Text } from '@chakra-ui/react';
+import { ChatMessage } from '@/app/lib/types';
 
-export const ChatConversation = () => {
+export const ChatConversation = ({ messages }: {
+    messages: ChatMessage[];
+}) => {
     return (
         <Flex flex="1" direction="column">
             <Text p={4} fontWeight="semibold">Messages</Text>

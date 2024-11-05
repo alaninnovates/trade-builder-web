@@ -1,4 +1,4 @@
-import { ChatMessage, PostedTrade } from '@/app/lib/types';
+import { PostedTrade } from '@/app/lib/types';
 import { Box, Button, Card, HStack, Stack, Text } from '@chakra-ui/react';
 import { Avatar } from '@/components/ui/avatar';
 import { Tooltip } from '@/components/ui/tooltip';
@@ -6,7 +6,6 @@ import { Trade } from '@/app/ui/trade/Trade';
 import { FaMessage } from 'react-icons/fa6';
 import { FaBookmark } from 'react-icons/fa';
 import { MdLocalOffer } from 'react-icons/md';
-import client from '@/app/lib/db';
 import { TradeModal } from '@/app/ui/trade/TradeModal';
 
 export const TradeCard = ({ trade }: { trade: PostedTrade }) => {
@@ -35,7 +34,11 @@ export const TradeCard = ({ trade }: { trade: PostedTrade }) => {
             <Card.Footer pt={4} justifyContent="center" alignItems="center">
                 <HStack gap="2">
                     <Tooltip content="Send offer" aria-label="Send offer" openDelay={0}>
-                        <TradeModal trigger={
+                        <TradeModal targetUser={{
+                            user_id: trade.user_id,
+                            user_name: trade.user_name,
+                            user_avatar: trade.user_avatar,
+                        }} trigger={
                             <Button variant="subtle">
                                 <MdLocalOffer/>
                             </Button>
@@ -55,14 +58,4 @@ export const TradeCard = ({ trade }: { trade: PostedTrade }) => {
             </Card.Footer>
         </Card.Root>
     );
-};
-
-const sendMessage = async () => {
-    try {
-        const mongoClient = await client.connect();
-        const db = mongoClient.db('trade-builder');
-        const messages = db.collection<ChatMessage>('messages');
-    } catch (e) {
-        console.error(e);
-    }
 };
