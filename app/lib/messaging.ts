@@ -162,7 +162,13 @@ export const getMessages = async () => {
 						m.source.user_id !== userId,
 				)?.source.user_avatar ?? convo.messages[0].target.user_avatar,
 			messages: convo.messages.map(
-				(m: { source: { user_id: string } }) =>
+				(m: {
+					target: any;
+					source: any;
+					message: any;
+					trade: any;
+					created_at: any;
+				}) =>
 					({
 						target: m.target,
 						source: m.source,
