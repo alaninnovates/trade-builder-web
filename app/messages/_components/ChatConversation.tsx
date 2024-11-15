@@ -2,12 +2,21 @@ import { Box, Flex, Input, Separator, Text } from '@chakra-ui/react';
 import { ChatMessage } from '@/app/lib/types';
 import { Trade } from '@/app/ui/trade/Trade';
 
-// replace 'You' with a check for msg.source.user_id === logged in user's id
-export const ChatConversation = ({ messages }: { messages: ChatMessage[] }) => {
+export const ChatConversation = ({
+	person,
+	messages,
+}: {
+	person:
+		| { id: string; name: string; avatar: string; unread: number }
+		| undefined;
+	messages: ChatMessage[];
+}) => {
+	if (!person) return null;
+	console.log('PERSON', person);
 	return (
 		<Flex flex="1" direction="column">
 			<Text p={4} fontWeight="semibold">
-				Messages
+				{person.name}
 			</Text>
 			<Separator />
 			<Box flex="1" overflowY="scroll" p={4} gap={4}>
@@ -15,7 +24,7 @@ export const ChatConversation = ({ messages }: { messages: ChatMessage[] }) => {
 					<Flex
 						key={index}
 						justify={
-							msg.source.user_id === 'You'
+							msg.source.user_id !== person.id
 								? 'flex-end'
 								: 'flex-start'
 						}
@@ -23,12 +32,12 @@ export const ChatConversation = ({ messages }: { messages: ChatMessage[] }) => {
 						<Box
 							maxW="70%"
 							bg={
-								msg.source.user_id === 'You'
+								msg.source.user_id !== person.id
 									? 'primary'
 									: 'muted'
 							}
 							color={
-								msg.source.user_id === 'You'
+								msg.source.user_id !== person.id
 									? 'primary.50'
 									: 'black'
 							}
@@ -39,6 +48,9 @@ export const ChatConversation = ({ messages }: { messages: ChatMessage[] }) => {
 								{msg.source.user_name}
 							</Text>
 							<Text fontSize="sm">{msg.message}</Text>
+							{msg.trade && (
+								<Trade trade={msg.trade} editable={false} />
+							)}
 							<Text
 								fontSize="xs"
 								textAlign="right"
@@ -48,9 +60,6 @@ export const ChatConversation = ({ messages }: { messages: ChatMessage[] }) => {
 								{msg.created_at.toLocaleString()}
 							</Text>
 						</Box>
-						{msg.trade && (
-							<Trade trade={msg.trade} editable={false} />
-						)}
 					</Flex>
 				))}
 			</Box>

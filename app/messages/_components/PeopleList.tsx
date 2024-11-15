@@ -19,14 +19,14 @@ export const PeopleList = ({
 }) => {
 	return (
 		<Box flex={1 / 3}>
-			<Text p={4}>Messages</Text>
+			<Text p={4}>Chats</Text>
 			<Separator />
 			<VStack gap={0} flex={1} overflowY="scroll">
 				{people.map((contact) => (
 					<Button
 						w="100%"
-						onClick={() => setActiveConversation(contact.name)}
-						key={contact.name}
+						onClick={() => setActiveConversation(contact.id)}
+						key={contact.id}
 					>
 						<Flex
 							w="100%"
