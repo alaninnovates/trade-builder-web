@@ -1,11 +1,11 @@
-import NextAuth from "next-auth"
-import Discord from "next-auth/providers/discord"
+import NextAuth from 'next-auth';
+import Discord from 'next-auth/providers/discord';
 
 const protectedRoutes = [
     '/home',
     '/create',
     '/messages',
-]
+];
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
     callbacks: {
@@ -17,6 +17,11 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             }
             return true;
         },
+        async session({ session, token, user }) {
+            console.log('ADAPTER SESSION', session, token, user);
+            session.user.id = user.id;
+            return session;
+        },
     },
-    providers: [Discord]
-})
+    providers: [Discord],
+});
