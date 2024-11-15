@@ -72,7 +72,10 @@ export const SearchBar = () => {
 							</Field>
 						</HStack>
 						<Field label="Category">
-							<CategorySelect categories={categories} setCategories={setCategories} />
+							<CategorySelect
+								categories={categories}
+								setCategories={setCategories}
+							/>
 						</Field>
 					</Box>
 				</Collapsible.Content>
