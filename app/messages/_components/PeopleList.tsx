@@ -21,12 +21,13 @@ export const PeopleList = ({
 		<Box flex={1 / 3}>
 			<Text p={4}>Chats</Text>
 			<Separator />
-			<VStack gap={0} flex={1} overflowY="scroll">
+			<VStack gap={0} flex={1} overflowY="scroll" h={'80%'}>
 				{people.map((contact) => (
 					<Button
 						w="100%"
 						onClick={() => setActiveConversation(contact.id)}
 						key={contact.id}
+						variant="ghost"
 					>
 						<Flex
 							w="100%"
@@ -36,11 +37,8 @@ export const PeopleList = ({
 							key={contact.name}
 							gap={4}
 						>
-							{/* <Avatar
-								src={`https://api.dicebear.com/6.x/initials/svg?seed=${contact.name}`}
-							/> */}
 							<Avatar
-								src={`https://api.dicebear.com/6.x/initials/svg?seed=${contact.avatar}`}
+								src={contact.avatar}
 							/>
 							<Box flex="1" minW="0">
 								<Text fontSize="sm" fontWeight="medium">
