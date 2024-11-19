@@ -5,6 +5,7 @@ import { Avatar } from '@/components/ui/avatar';
 import { GoPaperAirplane } from 'react-icons/go';
 import { useState } from 'react';
 import { Trade } from '@/app/ui/trade/Trade';
+import { sendMessage } from '@/app/lib/messaging';
 
 export const ChatConversation = ({
                                      person,
@@ -66,7 +67,14 @@ export const ChatConversation = ({
                     onChange={(e) => setInputMessage(e.target.value)}
                     flexGrow={1}
                 />
-                <Button type="submit">
+                <Button onClick={async () => {
+                    'use server';
+                    await sendMessage({
+                        user_id: person.id,
+                        user_name: person.name,
+                        user_avatar: person.avatar,
+                    }, inputMessage);
+                }}>
                     <GoPaperAirplane className="h-4 w-4"/>
                     <Text as="span" srOnly>Send message</Text>
                 </Button>
