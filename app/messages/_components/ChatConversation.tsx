@@ -68,7 +68,6 @@ export const ChatConversation = ({
                     flexGrow={1}
                 />
                 <Button onClick={async () => {
-                    'use server';
                     await sendMessage({
                         user_id: person.id,
                         user_name: person.name,
