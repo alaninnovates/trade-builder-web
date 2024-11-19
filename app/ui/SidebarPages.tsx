@@ -1,24 +1,23 @@
 'use client';
 import { Box, Heading, HStack } from '@chakra-ui/react';
 import { usePathname } from 'next/navigation';
-import { FaHome, FaWrench } from 'react-icons/fa';
-import { FaMessage } from 'react-icons/fa6';
+import { GoHome, GoInbox, GoTools } from 'react-icons/go';
 
 const pages = [
     {
         name: 'Home',
         path: '/home',
-        icon: <FaHome size={25}/>,
+        icon: <GoHome size={25}/>,
     },
     {
         name: 'Create',
         path: '/create',
-        icon: <FaWrench size={25}/>,
+        icon: <GoTools size={25}/>,
     },
     {
         name: 'Messages',
         path: '/messages',
-        icon: <FaMessage size={25}/>,
+        icon: <GoInbox size={25}/>,
     },
 ];
 
