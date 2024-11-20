@@ -2,7 +2,6 @@
 import {
     DialogBackdrop,
     DialogBody,
-    DialogCloseTrigger,
     DialogContent,
     DialogFooter,
     DialogHeader,
@@ -10,7 +9,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from '@/components/ui/dialog';
-import { Button, Textarea } from '@chakra-ui/react';
+import { Button, Dialog, Textarea } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { sendMessage } from '@/app/lib/messaging';
 
@@ -41,17 +40,13 @@ export const MessageModal = ({
                     />
                 </DialogBody>
                 <DialogFooter>
-                    <DialogCloseTrigger>
+                    <Dialog.CloseTrigger>
                         <Button
                             onClick={async () => {
                                 await sendMessage(targetUser, message);
-                            }}
-                        >
-                            Send Message
-                        </Button>
-                    </DialogCloseTrigger>
+                            }}>Send Message</Button>
+                    </Dialog.CloseTrigger>
                 </DialogFooter>
-                <DialogCloseTrigger/>
             </DialogContent>
         </DialogRoot>
     );

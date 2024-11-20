@@ -10,7 +10,7 @@ import {
     DialogTitle,
     DialogTrigger,
 } from '@/components/ui/dialog';
-import { Button } from '@chakra-ui/react';
+import { Button, Dialog } from '@chakra-ui/react';
 import { TradeEditor } from '@/app/ui/trade/TradeEditor';
 import React, { useState } from 'react';
 import { Trade as TradeType } from '@/app/lib/types';
@@ -42,11 +42,11 @@ export const TradeModal = ({ targetUser, trigger }: {
                     <TradeEditor trade={trade} setTrade={setTrade}/>
                 </DialogBody>
                 <DialogFooter>
-                    <DialogCloseTrigger>
+                    <Dialog.CloseTrigger>
                         <Button onClick={async () => {
                             await sendTradeOffer(targetUser, trade);
                         }}>Send Offer</Button>
-                    </DialogCloseTrigger>
+                    </Dialog.CloseTrigger>
                 </DialogFooter>
                 <DialogCloseTrigger/>
             </DialogContent>
