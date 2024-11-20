@@ -3,21 +3,69 @@ import { Box, Button, Input, Separator, Text, VStack } from '@chakra-ui/react';
 import { ChatMessage } from '@/app/lib/types';
 import { Avatar } from '@/components/ui/avatar';
 import { GoPaperAirplane } from 'react-icons/go';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Trade } from '@/app/ui/trade/Trade';
 import { sendMessage } from '@/app/lib/messaging';
+import { socket } from '@/app/lib/socket';
 
 export const ChatConversation = ({
                                      person,
                                      messages,
+                                     userId,
+                                     userName,
+                                     userAvatar,
                                  }: {
     person:
         | { id: string; name: string; avatar: string; unread: number }
         | undefined;
     messages: ChatMessage[];
+    userId: string;
+    userName: string;
+    userAvatar: string;
 }) => {
+    const [isConnected, setIsConnected] = useState(false);
     const [inputMessage, setInputMessage] = useState('');
-    if (!person) return null;
+    const [laterMessages, setLaterMessages] = useState<ChatMessage[]>([]);
+    useEffect(() => {
+        socket.connect();
+
+        function onConnect() {
+            setIsConnected(true);
+        }
+
+        function onDisconnect() {
+            setIsConnected(false);
+        }
+
+        socket.on('connect', onConnect);
+        socket.on('disconnect', onDisconnect);
+
+        return () => {
+            socket.disconnect();
+            socket.off('connect', onConnect);
+            socket.off('disconnect', onDisconnect);
+        };
+    }, []);
+
+    useEffect(() => {
+        console.log('PERSON', person);
+        if (!person) return;
+        console.log('EMIT JOIN');
+        socket.emit('join', person.id, userId);
+
+        function onMessage(message: ChatMessage) {
+            console.log('Received message', message);
+            message.created_at = new Date(message.created_at);
+            setLaterMessages((messages) => [...messages, message]);
+        }
+        socket.on('message', onMessage);
+
+        return () => {
+            socket.off('message', onMessage);
+        };
+    }, [person]);
+
+    if (!person || !isConnected) return null;
     return (
         <VStack w={'100%'} h={'100%'} flex={1} bg="background">
             <Box display="flex" alignItems="center" gap={3} p={4}>
@@ -32,7 +80,7 @@ export const ChatConversation = ({
             <Separator/>
             <Box flex="1" overflowY="scroll" p={4} gap={4} w={'100%'}>
                 <Box display="flex" flexDirection="column" gap={4} p={4}>
-                    {messages.map((msg, index) => (
+                    {[...messages, ...laterMessages].map((msg, index) => (
                         <Box
                             key={index}
                             display="flex"
@@ -68,6 +116,20 @@ export const ChatConversation = ({
                     flexGrow={1}
                 />
                 <Button onClick={async () => {
+                    setInputMessage('');
+                    socket.emit('message', {
+                        source: {
+                            user_id: userId,
+                            user_name: userName,
+                            user_avatar: userAvatar,
+                        },
+                        target: {
+                            user_id: person.id,
+                            user_name: person.name,
+                            user_avatar: person.avatar,
+                        },
+                        message: inputMessage,
+                    });
                     await sendMessage({
                         user_id: person.id,
                         user_name: person.name,
