@@ -42,9 +42,11 @@ export const TradeModal = ({ targetUser, trigger }: {
                     <TradeEditor trade={trade} setTrade={setTrade}/>
                 </DialogBody>
                 <DialogFooter>
-                    <Button onClick={async () => {
-                        await sendTradeOffer(targetUser, trade);
-                    }}>Send Offer</Button>
+                    <DialogCloseTrigger>
+                        <Button onClick={async () => {
+                            await sendTradeOffer(targetUser, trade);
+                        }}>Send Offer</Button>
+                    </DialogCloseTrigger>
                 </DialogFooter>
                 <DialogCloseTrigger/>
             </DialogContent>
