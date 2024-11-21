@@ -3,6 +3,9 @@ import http from 'http';
 import cors from 'cors';
 import { Server } from 'socket.io';
 import { AddressInfo } from 'node:net';
+import { config } from 'dotenv';
+
+config();
 
 interface Room {
     id: string;
