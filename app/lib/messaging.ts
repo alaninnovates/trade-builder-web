@@ -6,6 +6,7 @@ import {
 } from '@/app/lib/types';
 import { auth } from '@/app/lib/auth';
 import client from '@/app/lib/db';
+import { socket } from '@/app/lib/socket';
 
 interface User {
 	user_id: string;
@@ -24,7 +25,17 @@ export const sendTradeOffer = async (targetUser: User, trade: TradeType) => {
 		const mongoClient = await client.connect();
 		const db = mongoClient.db('trade-builder');
 		const messages = db.collection<Omit<ChatMessage, '_id'>>('messages');
-		return await messages.insertOne({
+		socket.emit('message', {
+			target: targetUser,
+			source: {
+				user_id: authUser.user.id!,
+				user_name: authUser.user.name!,
+				user_avatar: authUser.user.image!,
+			},
+			message: '',
+			trade,
+		});
+		await messages.insertOne({
 			target: targetUser,
 			source: {
 				user_id: authUser.user.id!,
@@ -51,7 +62,16 @@ export const sendMessage = async (targetUser: User, message: string) => {
 		const mongoClient = await client.connect();
 		const db = mongoClient.db('trade-builder');
 		const messages = db.collection<Omit<ChatMessage, '_id'>>('messages');
-		return await messages.insertOne({
+		socket.emit('message', {
+			target: targetUser,
+			source: {
+				user_id: authUser.user.id!,
+				user_name: authUser.user.name!,
+				user_avatar: authUser.user.image!,
+			},
+			message,
+		});
+		await messages.insertOne({
 			target: targetUser,
 			source: {
 				user_id: authUser.user.id!,

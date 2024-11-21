@@ -45,14 +45,14 @@ export const PeopleList = ({
 									{contact.name}
 								</Text>
 							</Box>
-							{contact.unread > 0 && (
-								<Badge
-									colorPalette="red"
-									className="rounded-full"
-								>
-									{contact.unread}
-								</Badge>
-							)}
+							{/*{contact.unread > 0 && (*/}
+							{/*	<Badge*/}
+							{/*		colorPalette="red"*/}
+							{/*		className="rounded-full"*/}
+							{/*	>*/}
+							{/*		{contact.unread}*/}
+							{/*	</Badge>*/}
+							{/*)}*/}
 						</Flex>
 					</Button>
 				))}

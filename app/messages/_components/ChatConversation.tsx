@@ -3,7 +3,7 @@ import { Box, Button, Input, Separator, Text, VStack } from '@chakra-ui/react';
 import { ChatMessage } from '@/app/lib/types';
 import { Avatar } from '@/components/ui/avatar';
 import { GoPaperAirplane } from 'react-icons/go';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Trade } from '@/app/ui/trade/Trade';
 import { sendMessage } from '@/app/lib/messaging';
 import { socket } from '@/app/lib/socket';
@@ -23,6 +23,7 @@ export const ChatConversation = ({
     userName: string;
     userAvatar: string;
 }) => {
+    const chatboxRef = useRef<HTMLDivElement>(null);
     const [isConnected, setIsConnected] = useState(false);
     const [inputMessage, setInputMessage] = useState('');
     const [laterMessages, setLaterMessages] = useState<ChatMessage[]>([]);
@@ -65,6 +66,14 @@ export const ChatConversation = ({
         };
     }, [person]);
 
+    useEffect(() => {
+        console.log('SCROLL');
+        chatboxRef.current?.scrollTo({
+            top: chatboxRef.current.scrollHeight,
+            behavior: 'smooth',
+        });
+    }, [messages, laterMessages]);
+
     if (!person || !isConnected) return null;
     return (
         <VStack w={'100%'} h={'100%'} flex={1} bg="background">
@@ -72,13 +81,13 @@ export const ChatConversation = ({
                 <Avatar src={person.avatar}/>
                 <Box>
                     <Text as="h2" fontSize="lg" fontWeight="semibold">{person.name}</Text>
-                    {person.unread > 0 && (
-                        <Text as="span" fontSize="sm" color="muted">{person.unread} unread messages</Text>
-                    )}
+                    {/*{person.unread > 0 && (*/}
+                    {/*    <Text as="span" fontSize="sm" color="muted">{person.unread} unread messages</Text>*/}
+                    {/*)}*/}
                 </Box>
             </Box>
             <Separator/>
-            <Box flex="1" overflowY="scroll" p={4} gap={4} w={'100%'}>
+            <Box flex="1" overflowY="scroll" p={4} gap={4} w={'100%'} ref={chatboxRef}>
                 <Box display="flex" flexDirection="column" gap={4} p={4}>
                     {[...messages, ...laterMessages].map((msg, index) => (
                         <Box
