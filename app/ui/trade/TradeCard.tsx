@@ -78,15 +78,15 @@ export const TradeCard = async ({ trade }: { trade: PostedTrade }) => {
 								}
 							/>
 						</Tooltip>
-						<Tooltip
-							content="Bookmark"
-							aria-label="Bookmark"
-							openDelay={0}
-						>
-							<Button variant="subtle">
-								<FaBookmark />
-							</Button>
-						</Tooltip>
+						{/*<Tooltip*/}
+						{/*	content="Bookmark"*/}
+						{/*	aria-label="Bookmark"*/}
+						{/*	openDelay={0}*/}
+						{/*>*/}
+						{/*	<Button variant="subtle">*/}
+						{/*		<FaBookmark />*/}
+						{/*	</Button>*/}
+						{/*</Tooltip>*/}
 					</HStack>
 				</Card.Footer>
 			)}
