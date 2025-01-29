@@ -21,6 +21,8 @@ export interface PostedTrade {
 	trade: Trade;
 }
 
+export type PostedTradeWithStringId = Omit<PostedTrade, "_id"> & { _id: string };
+
 export interface ChatMessage {
 	_id: ObjectId;
 	target: {
@@ -43,4 +45,11 @@ export interface AggregatedConversation {
 	user_name: string;
 	user_avatar: string;
 	messages: ChatMessage[];
+}
+
+export interface User {
+	user_id: string;
+	premium_level: number;
+	premium_since: Date;
+	bookmarks: string[];
 }
