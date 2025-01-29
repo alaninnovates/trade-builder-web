@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/dialog';
 import { Button, Dialog, Textarea } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { sendMessage } from '@/app/lib/messaging';
+import { sendMessage } from '@/app/lib/database/messaging';
 
 export const MessageModal = ({
                                  targetUser,

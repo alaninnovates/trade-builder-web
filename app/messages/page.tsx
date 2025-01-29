@@ -1,4 +1,4 @@
-import { getMessages } from '@/app/lib/messaging';
+import { getMessages } from '@/app/lib/database/messaging';
 import { Chat } from './_components/Chat';
 import { auth } from '@/app/lib/auth';
 

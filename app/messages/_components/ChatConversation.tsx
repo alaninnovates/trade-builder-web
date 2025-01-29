@@ -5,7 +5,7 @@ import { Avatar } from '@/components/ui/avatar';
 import { GoPaperAirplane } from 'react-icons/go';
 import { useEffect, useRef, useState } from 'react';
 import { Trade } from '@/app/ui/trade/Trade';
-import { sendMessage } from '@/app/lib/messaging';
+import { sendMessage } from '@/app/lib/database/messaging';
 import { socket } from '@/app/lib/socket';
 
 export const ChatConversation = ({

@@ -5,7 +5,7 @@ import {
 	Trade as TradeType,
 } from '@/app/lib/types';
 import { auth } from '@/app/lib/auth';
-import client from '@/app/lib/db';
+import client from '@/app/lib/database/db';
 import { socket } from '@/app/lib/socket';
 
 interface User {

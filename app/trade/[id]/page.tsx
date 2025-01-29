@@ -1,9 +1,7 @@
 import { TradeCard } from '@/app/ui/trade/TradeCard';
-import client from '@/app/lib/db';
-import { PostedTrade } from '@/app/lib/types';
-import { ObjectId } from 'bson';
 import { auth, signIn } from '@/app/lib/auth';
 import { Button, Center } from '@chakra-ui/react';
+import { getTrade } from '@/app/lib/database/trades';
 
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
     const id = (await params).id;
@@ -27,17 +25,6 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
             )}
         </Center>
     );
-};
-
-const getTrade = async (id: string) => {
-    try {
-        const mongoClient = await client.connect();
-        const db = mongoClient.db('trade-builder');
-        const trades = db.collection<PostedTrade>('posts');
-        return await trades.findOne({ _id: new ObjectId(id) });
-    } catch (e) {
-        console.error(e);
-    }
 };
 
 

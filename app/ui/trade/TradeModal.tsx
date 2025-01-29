@@ -14,7 +14,7 @@ import { Button, Dialog } from '@chakra-ui/react';
 import { TradeEditor } from '@/app/ui/trade/TradeEditor';
 import React, { useState } from 'react';
 import { Trade as TradeType } from '@/app/lib/types';
-import { sendTradeOffer } from '@/app/lib/messaging';
+import { sendTradeOffer } from '@/app/lib/database/messaging';
 
 export const TradeModal = ({ targetUser, trigger }: {
     targetUser: {
