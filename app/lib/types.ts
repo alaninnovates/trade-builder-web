@@ -47,9 +47,19 @@ export interface AggregatedConversation {
 	messages: ChatMessage[];
 }
 
+export interface Session {
+	id: string;
+	user_id: string;
+	expires_at: Date;
+}
+
 export interface User {
 	user_id: string;
 	premium_level: number;
 	premium_since: Date;
 	bookmarks: string[];
+	global_name: string;
+	username: string | null;
+	email: string;
+	image: string;
 }
