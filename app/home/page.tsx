@@ -6,11 +6,7 @@ const Page = () => {
 	return (
 		<VStack
 			mt={6}
-			w={{
-				// not too big on small devices, but 100% width on larger devices
-				base: '100%',
-				md: '75%',
-			}}
+			w={{ base: '100%', lg: '80%', xl: '75%' }}
 		>
 			<SearchBar />
 			<TradeList />

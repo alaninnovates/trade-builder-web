@@ -4,7 +4,7 @@ import { SidebarPages } from '@/app/ui/SidebarPages';
 
 export const Sidebar = () => {
 	return (
-		<nav>
+		<nav style={{ height: '100%' }}>
 			<VStack alignItems={'start'} p={4} gap={0} h="100%">
 				<Image
 					src="/logo.png"

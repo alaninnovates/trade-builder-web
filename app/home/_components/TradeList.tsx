@@ -15,7 +15,7 @@ export const TradeList = async () => {
 	const bookmarks = await getBookmarkedTrades(user?.user_id as string) ?? [];
 	console.log(bookmarks);
 
-	return <VStack gap={4} align="stretch" w="80%">
+	return <VStack gap={4} align="stretch" w={{ base: '100%', lg: '80%' }}>
 		{trades.map((trade) => (
 			<Box key={trade._id.toString()}>
 				<TradeCard trade={{

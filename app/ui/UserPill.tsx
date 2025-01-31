@@ -1,6 +1,6 @@
 import { Button, HStack, Stack, Text } from '@chakra-ui/react';
 import { Avatar } from '@/components/ui/avatar';
-import { PopoverContent, PopoverRoot, PopoverTrigger, PopoverBody, PopoverArrow } from '@/components/ui/popover';
+import { PopoverArrow, PopoverBody, PopoverContent, PopoverRoot, PopoverTrigger } from '@/components/ui/popover';
 import { deleteSessionTokenCookie, getCurrentSession, invalidateSession } from '@/app/lib/auth/session';
 import { redirect } from 'next/navigation';
 
@@ -12,7 +12,7 @@ export const UserPill = async () => {
     }
 
     return (
-        <PopoverRoot positioning={{ sameWidth: true }}>
+        <PopoverRoot>
             <PopoverTrigger asChild>
                 <Button h="auto" py={2} px={6} variant="ghost">
                     <HStack gap="3">
@@ -21,7 +21,7 @@ export const UserPill = async () => {
                             name={user.global_name ?? user.username}
                             shape="rounded"
                         />
-                        <Stack gap="1" align="flex-start">
+                        <Stack gap="1" align="flex-start" hideBelow="lg">
                             <Text fontWeight="medium" lineHeight="1">
                                 {user.global_name ?? user.username}
                             </Text>
@@ -33,7 +33,7 @@ export const UserPill = async () => {
                 </Button>
             </PopoverTrigger>
             <PopoverContent>
-                <PopoverArrow />
+                <PopoverArrow/>
                 <PopoverBody display="flex" justifyContent="center">
                     <form action={logout}>
                         <Button type="submit">Sign Out</Button>
@@ -45,17 +45,17 @@ export const UserPill = async () => {
 };
 
 async function logout(): Promise<ActionResult> {
-    "use server";
+    'use server';
     const { session } = await getCurrentSession();
     if (!session) {
         return {
-            error: "Unauthorized"
+            error: 'Unauthorized',
         };
     }
 
     await invalidateSession(session.id);
     await deleteSessionTokenCookie();
-    return redirect("/");
+    return redirect('/');
 }
 
 interface ActionResult {

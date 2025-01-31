@@ -25,7 +25,7 @@ export const Trade = ({ trade, editable, onItemRemove }: {
                     </Text>
                 </Flex>
             </Box>
-            <Flex p={4} gap={4}>
+            <Flex p={4} gap={4} flexDir={{ base: 'column', lg: 'row' }}>
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
                     {Object.entries(trade.offering).map(([item, quantity]) => (
