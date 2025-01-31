@@ -3,7 +3,6 @@ import { cache } from 'react';
 import { encodeBase32LowerCaseNoPadding, encodeHexLowerCase } from '@oslojs/encoding';
 import { sha256 } from '@oslojs/crypto/sha2';
 import client from '@/app/lib/database/db';
-import { WithId } from 'mongodb';
 import { Session, User } from '@/app/lib/types';
 import { withoutId } from '@/app/lib/database/utils';
 

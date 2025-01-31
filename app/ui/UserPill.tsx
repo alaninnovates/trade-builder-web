@@ -1,6 +1,6 @@
-import { Button, HStack, Text } from '@chakra-ui/react';
+import { Box, Button, HStack, Stack, Text } from '@chakra-ui/react';
 import { Avatar } from '@/components/ui/avatar';
-import { PopoverContent, PopoverRoot, PopoverTrigger } from '@/components/ui/popover';
+import { PopoverContent, PopoverRoot, PopoverTrigger, PopoverBody, PopoverArrow } from '@/components/ui/popover';
 import { deleteSessionTokenCookie, getCurrentSession, invalidateSession } from '@/app/lib/auth/session';
 import { redirect } from 'next/navigation';
 
@@ -15,16 +15,30 @@ export const UserPill = async () => {
         <PopoverRoot positioning={{ sameWidth: true }}>
             <PopoverTrigger asChild>
                 <Button h="auto" py={2} px={6} variant="ghost">
-                    <HStack>
-                        <Avatar src={user.image ?? ''}/>
-                        <Text>{user.global_name ?? user.username}</Text>
+                    <HStack gap="3">
+                        <Avatar
+                            src={user.image}
+                            name={user.global_name ?? user.username}
+                            shape="rounded"
+                        />
+                        <Stack gap="1" align="flex-start">
+                            <Text fontWeight="medium" lineHeight="1">
+                                {user.global_name ?? user.username}
+                            </Text>
+                            <Text color="fg.subtle" lineHeight="1">
+                                @{user.username}
+                            </Text>
+                        </Stack>
                     </HStack>
                 </Button>
             </PopoverTrigger>
             <PopoverContent>
-                <form action={logout}>
-                    <Button type="submit">Sign Out</Button>
-                </form>
+                <PopoverArrow />
+                <PopoverBody display="flex" justifyContent="center">
+                    <form action={logout}>
+                        <Button type="submit">Sign Out</Button>
+                    </form>
+                </PopoverBody>
             </PopoverContent>
         </PopoverRoot>
     );

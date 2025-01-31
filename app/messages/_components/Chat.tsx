@@ -5,10 +5,11 @@ import { PeopleList } from '@/app/messages/_components/PeopleList';
 import { ChatConversation } from '@/app/messages/_components/ChatConversation';
 import { AggregatedConversation } from '@/app/lib/types';
 
-export const Chat = ({ messages, userId, userName, userAvatar }: {
+export const Chat = ({ messages, userId, userName, userGlobalName, userAvatar }: {
     messages: AggregatedConversation[];
     userId: string;
     userName: string;
+    userGlobalName: string | null;
     userAvatar: string;
 }) => {
     const [activeConversation, setActiveConversation] = useState<string | null>(
@@ -18,7 +19,7 @@ export const Chat = ({ messages, userId, userName, userAvatar }: {
     const people = useMemo(() => {
         const people = new Map<
             string,
-            { id: string; name: string; avatar: string; unread: number }
+            { id: string; name: string; globalName: string | null; avatar: string; unread: number }
         >();
 
         for (const message of messages) {
@@ -27,6 +28,7 @@ export const Chat = ({ messages, userId, userName, userAvatar }: {
                 people.set(message.user_id, {
                     id: person.id,
                     name: person.name,
+                    globalName: person.globalName,
                     avatar: person.avatar,
                     unread: person.unread + 1,
                 });
@@ -34,6 +36,7 @@ export const Chat = ({ messages, userId, userName, userAvatar }: {
                 people.set(message.user_id, {
                     id: message.user_id,
                     name: message.user_name,
+                    globalName: message.user_global_name,
                     avatar: message.user_avatar,
                     unread: 1,
                 });
@@ -54,6 +57,7 @@ export const Chat = ({ messages, userId, userName, userAvatar }: {
                 person={people.find((p) => p.id === activeConversation)}
                 userId={userId}
                 userName={userName}
+                userGlobalName={userGlobalName}
                 userAvatar={userAvatar}
                 messages={
                     messages.find((m) => m.user_id === activeConversation)

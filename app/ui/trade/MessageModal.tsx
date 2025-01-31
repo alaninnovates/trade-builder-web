@@ -12,16 +12,13 @@ import {
 import { Button, Dialog, Textarea } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { sendMessage } from '@/app/lib/database/messaging';
+import { ChatMessageUser } from '@/app/lib/types';
 
 export const MessageModal = ({
                                  targetUser,
                                  trigger,
                              }: {
-    targetUser: {
-        user_id: string;
-        user_name: string;
-        user_avatar: string;
-    };
+    targetUser: ChatMessageUser;
     trigger: React.ReactNode;
 }) => {
     const [message, setMessage] = useState('');

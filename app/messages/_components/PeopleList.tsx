@@ -14,7 +14,7 @@ export const PeopleList = ({
 	people,
 	setActiveConversation,
 }: {
-	people: { id: string; name: string; avatar: string; unread: number }[];
+	people: { id: string; name: string; globalName: string | null; avatar: string; unread: number }[];
 	setActiveConversation: React.Dispatch<React.SetStateAction<string | null>>;
 }) => {
 	return (

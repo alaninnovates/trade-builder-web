@@ -11,7 +11,7 @@ const Page = async () => {
 		return null;
 	}
 
-	return <Chat messages={messages} userId={user.user_id} userName={user.global_name ?? user.username} userAvatar={user.image} />;
+	return <Chat messages={messages} userId={user.user_id} userName={user.username} userGlobalName={user.global_name} userAvatar={user.image} />;
 };
 
 export default Page;

@@ -29,7 +29,7 @@ export const Trade = ({ trade, editable, onItemRemove }: {
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
                     {Object.entries(trade.offering).map(([item, quantity]) => (
-                        <ItemBox key={item} item={item} quantity={quantity} editable={!!editable} onRemove={() => {
+                        <ItemBox key={item} item={item} quantity={quantity} editable={editable ?? false} onRemove={() => {
                             if (onItemRemove) {
                                 onItemRemove('offering', item);
                             }
@@ -47,7 +47,7 @@ export const Trade = ({ trade, editable, onItemRemove }: {
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
                     {Object.entries(trade.lookingFor).map(([item, quantity]) => (
-                        <ItemBox key={item} item={item} quantity={quantity} editable={!!editable} onRemove={() => {
+                        <ItemBox key={item} item={item} quantity={quantity} editable={editable ?? false} onRemove={() => {
                             if (onItemRemove) {
                                 onItemRemove('lookingFor', item);
                             }

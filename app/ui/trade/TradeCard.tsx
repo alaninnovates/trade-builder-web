@@ -21,12 +21,12 @@ export const TradeCard = ({ userId, trade, bookmarked }: { userId?: string, trad
                 <HStack mb="6" gap="3">
                     <Avatar
                         src={trade.user_avatar}
-                        name={trade.user_name}
+                        name={trade.user_global_name ?? trade.user_name}
                         shape="rounded"
                     />
                     <Stack gap="1">
                         <Text fontWeight="medium" lineHeight="1">
-                            {trade.user_name}
+                            {trade.user_global_name ?? trade.user_name}
                         </Text>
                         <Text color="fg.subtle" lineHeight="1">
                             @{trade.user_name}

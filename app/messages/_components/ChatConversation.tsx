@@ -13,14 +13,16 @@ export const ChatConversation = ({
                                      messages,
                                      userId,
                                      userName,
+                                     userGlobalName,
                                      userAvatar,
                                  }: {
     person:
-        | { id: string; name: string; avatar: string; unread: number }
+        | { id: string; name: string; globalName: string | null; avatar: string; unread: number }
         | undefined;
     messages: ChatMessage[];
     userId: string;
     userName: string;
+    userGlobalName: string | null;
     userAvatar: string;
 }) => {
     const chatboxRef = useRef<HTMLDivElement>(null);
@@ -59,6 +61,7 @@ export const ChatConversation = ({
             message.created_at = new Date(message.created_at);
             setLaterMessages((messages) => [...messages, message]);
         }
+
         socket.on('message', onMessage);
 
         return () => {
@@ -130,11 +133,13 @@ export const ChatConversation = ({
                         source: {
                             user_id: userId,
                             user_name: userName,
+                            user_global_name: userGlobalName,
                             user_avatar: userAvatar,
                         },
                         target: {
                             user_id: person.id,
                             user_name: person.name,
+                            user_global_name: person.globalName,
                             user_avatar: person.avatar,
                         },
                         message: inputMessage,
@@ -142,6 +147,7 @@ export const ChatConversation = ({
                     await sendMessage({
                         user_id: person.id,
                         user_name: person.name,
+                        user_global_name: person.globalName,
                         user_avatar: person.avatar,
                     }, inputMessage);
                 }}>

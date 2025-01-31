@@ -1,16 +1,10 @@
 'use server';
-import { AggregatedConversation, ChatMessage, Trade as TradeType } from '@/app/lib/types';
+import { AggregatedConversation, ChatMessage, ChatMessageUser, Trade as TradeType } from '@/app/lib/types';
 import client from '@/app/lib/database/db';
 import { socket } from '@/app/lib/socket';
 import { getCurrentSession } from '@/app/lib/auth/session';
 
-interface User {
-    user_id: string;
-    user_name: string;
-    user_avatar: string;
-}
-
-export const sendTradeOffer = async (targetUser: User, trade: TradeType) => {
+export const sendTradeOffer = async (targetUser: ChatMessageUser, trade: TradeType) => {
     const { user } = await getCurrentSession();
 
     if (!user) {
@@ -21,9 +15,10 @@ export const sendTradeOffer = async (targetUser: User, trade: TradeType) => {
         const mongoClient = await client.connect();
         const db = mongoClient.db('trade-builder');
         const messages = db.collection<Omit<ChatMessage, '_id'>>('messages');
-        const sourceUser: User = {
+        const sourceUser: ChatMessageUser = {
             user_id: user.user_id,
-            user_name: user.global_name ?? user.username,
+            user_name: user.username,
+            user_global_name: user.global_name,
             user_avatar: user.image,
         };
         socket.emit('message', {
@@ -44,7 +39,7 @@ export const sendTradeOffer = async (targetUser: User, trade: TradeType) => {
     }
 };
 
-export const sendMessage = async (targetUser: User, message: string) => {
+export const sendMessage = async (targetUser: ChatMessageUser, message: string) => {
     const { user } = await getCurrentSession();
 
     if (!user) {
@@ -55,9 +50,10 @@ export const sendMessage = async (targetUser: User, message: string) => {
         const mongoClient = await client.connect();
         const db = mongoClient.db('trade-builder');
         const messages = db.collection<Omit<ChatMessage, '_id'>>('messages');
-        const sourceUser: User = {
+        const sourceUser: ChatMessageUser = {
             user_id: user.user_id,
-            user_name: user.global_name ?? user.username,
+            user_name: user.username,
+            user_global_name: user.global_name,
             user_avatar: user.image,
         };
         socket.emit('message', {
@@ -76,7 +72,7 @@ export const sendMessage = async (targetUser: User, message: string) => {
     }
 };
 
-export const getMessages = async () => {
+export const getMessages = async (): Promise<AggregatedConversation[] | undefined> => {
     const { user } = await getCurrentSession();
 
     if (!user) {
@@ -170,6 +166,12 @@ export const getMessages = async () => {
                     (m: { source: { user_id: string } }) =>
                         m.source.user_id !== userId,
                 )?.source.user_name ?? convo.messages[0].target.user_name,
+            user_global_name:
+                convo.messages.find(
+                    (m: { source: { user_id: string } }) =>
+                        m.source.user_id !== userId,
+                )?.source.user_global_name ??
+                convo.messages[0].target.user_global_name,
             user_avatar:
                 convo.messages.find(
                     (m: { source: { user_id: string } }) =>
