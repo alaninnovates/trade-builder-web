@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Trade Builder Website
 
-## Getting Started
+## What's this?
+Trade Builder is a Discord Bot and Website that allows players of the Roblox game [Bee Swarm simulator](https://www.roblox.com/game-details-web-subsite/games/1537690962/Bee-Swarm-Simulator) to publicly advertise and trade their stickers and beequips. The Discord bot can be used as a way to generate beautiful images that can be posted in trading servers, and the website can be used to reach a larger audience. The website also incorporates advanced filtering features, sucha s filtering by items, that would be difficult to do through a trading server.
 
-First, run the development server:
+## Cool, how do I use it?
+You can jump right in to the fun at https://tradebuilder.app. Sign in with your Discord account, and start playing around!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+A few screenshots of the website in action:
+<table>
+    <tr>
+        <td>
+            <img src="assets/tradebuilder_app_home.png" alt="Trade Builder Home Page">
+            <p>Home page</p>
+        </td>
+        <td>
+            <img src="assets/tradebuilder_app_create.jpeg" alt="Trade Builder Create Page">
+            <p>Trade creator page</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="assets/tradebuilder_app_messages.jpeg" alt="Trade Builder Messages Page">
+            <p>Messaging page</p>            
+        </td>
+    </tr>
+</table>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The website is also mobile friendly! Check it out:
+<center>
+<img src="assets/tradebuilder_app_iphone_home.png" alt="Trade Builder Home Page on iPhone" width="200">
+</center>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Questions?
+Join the [Meta Bee Discord server](https://discord.gg/2BgUMfCsHM) or contact me on Discord at `alaninnovates`!
