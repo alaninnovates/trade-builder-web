@@ -54,6 +54,7 @@ export const TradeCard = ({ userId, trade, bookmarked }: { userId?: string, trad
                                 targetUser={{
                                     user_id: trade.user_id,
                                     user_name: trade.user_name,
+                                    user_global_name: trade.user_global_name,
                                     user_avatar: trade.user_avatar,
                                 }}
                                 trigger={
@@ -72,6 +73,7 @@ export const TradeCard = ({ userId, trade, bookmarked }: { userId?: string, trad
                                 targetUser={{
                                     user_id: trade.user_id,
                                     user_name: trade.user_name,
+                                    user_global_name: trade.user_global_name,
                                     user_avatar: trade.user_avatar,
                                 }}
                                 trigger={

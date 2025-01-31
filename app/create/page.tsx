@@ -1,15 +1,11 @@
-'use client';
-import { TradeEditor } from '@/app/ui/trade/TradeEditor';
-import { useState } from 'react';
-import { Trade as TradeType } from '@/app/lib/types';
+import { getCurrentSession } from '@/app/lib/auth/session';
+import { TradeCreator } from '@/app/create/_components/TradeCreator';
 
-const Page = () => {
-    const [trade, setTrade] = useState<TradeType>({
-        offering: {},
-        lookingFor: {},
-    });
+const Page = async () => {
+    const {user} = await getCurrentSession();
+
     return (
-        <TradeEditor trade={trade} setTrade={setTrade}/>
+        <TradeCreator user={user} />
     );
 };
 

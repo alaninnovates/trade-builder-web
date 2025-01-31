@@ -1,4 +1,4 @@
-import { Box, Button, HStack, Stack, Text } from '@chakra-ui/react';
+import { Button, HStack, Stack, Text } from '@chakra-ui/react';
 import { Avatar } from '@/components/ui/avatar';
 import { PopoverContent, PopoverRoot, PopoverTrigger, PopoverBody, PopoverArrow } from '@/components/ui/popover';
 import { deleteSessionTokenCookie, getCurrentSession, invalidateSession } from '@/app/lib/auth/session';

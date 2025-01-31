@@ -1,16 +1,16 @@
 'use client';
 import { Trade as TradeType } from '@/app/lib/types';
 import { Trade } from '@/app/ui/trade/Trade';
-import { Button, Center, Flex, Group } from '@chakra-ui/react';
+import { Button, Center, CenterProps, Flex, Group } from '@chakra-ui/react';
 import { ItemListDialog } from '@/app/ui/trade/ItemListDialog';
 import React from 'react';
 
-export const TradeEditor = ({trade, setTrade}: {
+export const TradeEditor = ({trade, setTrade, ...props}: {
     trade: TradeType,
     setTrade: React.Dispatch<React.SetStateAction<TradeType>>,
-}) => {
+} & CenterProps) => {
     return (
-        <Center height="100%" flexDirection="column" gap={4}>
+        <Center height="100%" flexDirection="column" gap={4} {...props}>
             <Trade trade={trade} editable={true} onItemRemove={(group: 'offering' | 'lookingFor', item: string) => {
                 const copy = { ...trade };
                 delete copy[group][item];

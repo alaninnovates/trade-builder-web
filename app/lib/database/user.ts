@@ -1,7 +1,6 @@
 import client from '@/app/lib/database/db';
 import { User } from '@/app/lib/types';
 import { withoutId } from '@/app/lib/database/utils';
-import { WithId } from 'mongodb';
 
 const getProfileURL = (id: string, avatar: string, discriminator: string) => {
     let imageUrl: string;
