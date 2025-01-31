@@ -1,5 +1,5 @@
 'use client';
-import { Box, Heading, HStack } from '@chakra-ui/react';
+import { Box, HStack } from '@chakra-ui/react';
 import { usePathname } from 'next/navigation';
 import { GoHome, GoInbox, GoTools } from 'react-icons/go';
 

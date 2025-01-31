@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { useState } from 'react';
 import { Trade as TradeType, User } from '@/app/lib/types';
 import { Box, Button, Text } from '@chakra-ui/react';
@@ -21,7 +21,7 @@ export const TradeCreator = ({ user }: { user: User | null }) => {
 
     return (
         <Box height="100%" display="flex" flexDirection="column" gap={4} alignItems="center" justifyContent="center">
-            <TradeEditor trade={trade} setTrade={setTrade} width="100%" height="auto"/>
+            <TradeEditor trade={trade} setTrade={setTrade} width={{ base: '90%', lg: '100%' }} height="auto"/>
             {user && (
                 <Box display="flex" flexDirection="column" gap={4} alignItems="center" mt={10}>
                     <Box display="flex" flexDirection="row" gap={4}>
