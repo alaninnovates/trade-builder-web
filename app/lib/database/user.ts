@@ -36,9 +36,13 @@ export const createUser = async (profile: any): Promise<User> => {
     return user;
 };
 
-export const getUser = async (id: string): Promise<User> => {
+export const getUser = async (id: string): Promise<User | null> => {
     const mongoClient = await client.connect();
     const db = mongoClient.db('trade-builder');
     const users = db.collection<User>('users');
-    return withoutId(await users.findOne({ user_id: id }) as WithId<User>);
+    const userResult = await users.findOne({ user_id: id });
+    if (userResult === null) {
+        return null;
+    }
+    return withoutId(userResult);
 };

@@ -2,17 +2,17 @@ import { Box, VStack } from '@chakra-ui/react';
 import { TradeCard } from '@/app/ui/trade/TradeCard';
 import { getTrades } from '@/app/lib/database/trades';
 import { getBookmarkedTrades } from '@/app/lib/database/bookmarks';
-import { auth } from '@/app/lib/auth';
+import { getCurrentSession } from '@/app/lib/auth/session';
 
 export const TradeList = async () => {
-	const session = await auth();
+	const {user} = await getCurrentSession();
 	const trades = await getTrades();
 
 	if (!trades) {
 		return null;
 	}
 
-	const bookmarks = await getBookmarkedTrades(session?.user?.id as string) ?? [];
+	const bookmarks = await getBookmarkedTrades(user?.user_id as string) ?? [];
 	console.log(bookmarks);
 
 	return <VStack gap={4} align="stretch" w="80%">
@@ -21,7 +21,7 @@ export const TradeList = async () => {
 				<TradeCard trade={{
 					...trade,
 					_id: trade._id.toString(),
-				}} bookmarked={bookmarks.includes(trade._id.toString())} userId={session?.user?.id} />
+				}} bookmarked={bookmarks.includes(trade._id.toString())} userId={user?.user_id} />
 			</Box>
 		))}
 	</VStack>;

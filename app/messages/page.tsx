@@ -1,17 +1,17 @@
 import { getMessages } from '@/app/lib/database/messaging';
 import { Chat } from './_components/Chat';
-import { auth } from '@/app/lib/auth';
+import { getCurrentSession } from '@/app/lib/auth/session';
 
 const Page = async () => {
 	const messages = await getMessages();
-	const session = await auth();
+	const {user} = await getCurrentSession();
 	console.log(messages);
 
-	if (!messages || !session || !session.user) {
+	if (!messages || !user) {
 		return null;
 	}
 
-	return <Chat messages={messages} userId={session.user.id!} userName={session.user.name!} userAvatar={session.user.image!} />;
+	return <Chat messages={messages} userId={user.user_id} userName={user.global_name ?? user.username} userAvatar={user.image} />;
 };
 
 export default Page;

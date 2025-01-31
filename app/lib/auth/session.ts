@@ -72,7 +72,11 @@ export async function validateSessionToken(token: string): Promise<SessionValida
         return { session: null, user: null };
     }
     const session = withoutId(result);
-    const user = withoutId(await users.findOne({ user_id: session.user_id }) as WithId<User>);
+    const userResult = await users.findOne({ user_id: session.user_id });
+    if (userResult === null) {
+        return { session: null, user: null };
+    }
+    const user = withoutId(userResult);
     if (Date.now() >= session.expires_at.getTime()) {
         await sessions.deleteOne({ id: sessionId });
         return { session: null, user: null };

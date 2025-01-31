@@ -1,5 +1,4 @@
 import { Button, Card, Center, Text } from '@chakra-ui/react';
-import { signIn } from '@/app/lib/auth';
 
 export default function Home() {
     return (
@@ -12,14 +11,9 @@ export default function Home() {
                     <Text>Sign in to get started!</Text>
                 </Card.Body>
                 <Card.Footer justifyContent="center">
-                        <form
-                            action={async () => {
-                                'use server';
-                                await signIn('discord', { redirectTo: '/home' });
-                            }}
-                        >
-                                <Button type="submit">Sign in with Discord</Button>
-                        </form>
+                    <a href="/login/discord">
+                        <Button type="button">Sign in with Discord</Button>
+                    </a>
                 </Card.Footer>
             </Card.Root>
         </Center>
