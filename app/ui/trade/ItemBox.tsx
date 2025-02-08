@@ -1,5 +1,6 @@
 import { Box, Float, Image, Show, Text } from '@chakra-ui/react';
 import { CloseButton } from '@/components/ui/close-button';
+import { getItemImage } from '@/app/lib/data/data';
 
 export const ItemBox = ({ item, quantity, editable, onRemove }: {
     item: string;
@@ -15,7 +16,7 @@ export const ItemBox = ({ item, quantity, editable, onRemove }: {
                     <CloseButton onClick={onRemove} colorPalette="red" variant="solid" rounded="4xl" size="xs"/>
                 </Float>
             </Show>
-            <Image src={`/assets/stickers/${item}.png`} alt={item} w={8} h={8}/>
+            <Image src={'/' + getItemImage(item)} alt={item} w={8} h={8}/>
             <Text fontSize="xs" position="absolute" bottom={1} right={1}>x{quantity}</Text>
         </Box>
     );

@@ -1,0 +1,699 @@
+export const beequipData = {
+    "Thimble": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Convert Amount"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Convert Rate",
+            "x Convert Rate"
+        ],
+        "image": "assets/beequips/Thimble.png"
+    },
+    "Sweatband": {
+        "buffs": [
+            "+% Energy",
+            "+% White Gather Amount",
+            "+% Red Gather Amount",
+            "+% Blue Gather Amount"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% White Pollen",
+            "+% Red Pollen",
+            "+% Blue Pollen",
+            "+% Max Bee Energy",
+            "+% Pollen"
+        ],
+        "image": "assets/beequips/Sweatband.png"
+    },
+    "Bandage": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Energy",
+            "+% Attack"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "x Bee Attack"
+        ],
+        "image": "assets/beequips/Bandage.png"
+    },
+    "Thumbtack": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Critical Power",
+            "+% Attack",
+            "+ Attack"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Red Bee Attack",
+            "+% Bee Attack"
+        ],
+        "image": "assets/beequips/Thumbtack.png"
+    },
+    "Camo Bandana": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Buzz Bomb Pollen",
+            "+ Attack",
+            "+% Critical Power",
+            "+% Super Crit Power"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Buzz Bomb Pollen",
+            "+% Pumpkin Patch Capacity",
+            "+% Coconut Field Capacity",
+            "+% Super-Crit Power"
+        ],
+        "image": "assets/beequips/Camo Bandana.png"
+    },
+    "Bottle Cap": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Critical Chance",
+            "+% Critical Power"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Buzz Bomb"
+        ],
+        "bonuses": [
+            "+% Critical Power"
+        ],
+        "image": "assets/beequips/Bottle Cap.png"
+    },
+    "Kazoo": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Critical Power"
+        ],
+        "debuffs": [
+            "-% Energy"
+        ],
+        "ability": [
+            "+Ability: Melody"
+        ],
+        "bonuses": [
+            "+% Critical Power",
+            "+% Super-Crit Power"
+        ],
+        "image": "assets/beequips/Kazoo.png"
+    },
+    "Smiley Sticker": {
+        "buffs": [
+            "+% Energy",
+            "+% Bomb Pollen",
+            "+% Critical Power",
+            "+% Mark Duration"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Honey Mark",
+            "+Ability: Blue Bomb"
+        ],
+        "bonuses": [
+            "+% Mark Duration",
+            "+% Max Bee Energy"
+        ],
+        "image": "assets/beequips/Smiley Sticker.png"
+    },
+    "Whistle": {
+        "buffs": [
+            "+% Movespeed",
+            "+% Critical Power"
+        ],
+        "debuffs": [
+            "-% Energy"
+        ],
+        "ability": [
+            "+Ability: Haste",
+            "+Ability: Melody"
+        ],
+        "bonuses": [
+            "+% Bee Movespeed",
+            "+% Super-Crit Power",
+            "x Player Movespeed"
+        ],
+        "image": "assets/beequips/Whistle.png"
+    },
+    "Charm Bracelet": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Critical Chance",
+            "+% Mark Duration",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Melody"
+        ],
+        "bonuses": [
+            "+% Loot Luck",
+            "+% Honey At Hive",
+            "+% Convert Rate At Hive",
+            "+% Honey From Tokens",
+            "+% Blue Flower Field Pollen",
+            "+% Dandelion Field Pollen",
+            "+% Mushroom Field Pollen",
+            "+% Sunflower Field Pollen"
+        ],
+        "image": "assets/beequips/Charm Bracelet.png"
+    },
+    "Paperclip": {
+        "buffs": [
+            "+% Ability Rate",
+            "+% Ability Pollen",
+            "+% Convert Rate At Hive"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Token Link"
+        ],
+        "bonuses": [
+            "+% Ability Token Lifespan",
+            "+% Bee Ability Pollen"
+        ],
+        "image": "assets/beequips/Paperclip.png"
+    },
+    "Beret": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Convert Amount",
+            "+% Ability Pollen"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Blue Boost"
+        ],
+        "bonuses": [
+            "+ Capacity",
+            "+% Blue Field Capacity",
+            "+% Capacity"
+        ],
+        "image": "assets/beequips/Beret.png"
+    },
+    "Bang Snap": {
+        "buffs": [
+            "+% Bomb Pollen",
+            "+% Critical Chance"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Buzz Bomb",
+            "+Ability: Red Bomb",
+            "+Ability: Blue Bomb",
+            "+Ability: Buzz Bomb(+)",
+            "+Ability: Red Bomb(+)",
+            "+Ability: Blue Bomb(+)",
+            "+Ability: Honey Mark"
+        ],
+        "bonuses": [
+            "+ Instant Bomb Conversion",
+            "+% Instant Buzz Bomb Conversion",
+            "+% Red Bomb Conversion",
+            "+% Blue Bomb Conversion"
+        ],
+        "image": "assets/beequips/Bang Snap.png"
+    },
+    "Bead Lizard": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Gathering Flames Chance",
+            "+% Gathering Bubbles Chance"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Token Link"
+        ],
+        "bonuses": [
+            "+% Bubble Pollen",
+            "+% Flame Pollen",
+            "+% Bee Ability Pollen"
+        ],
+        "image": "assets/beequips/Bead Lizard.png"
+    },
+    "Pink Shades": {
+        "buffs": [
+            "+% Ability",
+            "+% Critical Power",
+            "+% Critical Chance",
+            "+% Super-Crit Chance"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Focus"
+        ],
+        "bonuses": [
+            "+% Super-Crit Chance",
+            "+% Super-Crit Power"
+        ],
+        "image": "assets/beequips/Pink Shades.png"
+    },
+    "Lei": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Gather Amount",
+            "+% Gather Pollination Chance",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Red Boost",
+            "+Ability: Blue Boost"
+        ],
+        "bonuses": [
+            "+% Sunflower Field Pollen",
+            "+% Blue Field Pollen",
+            "+% Rose Field Pollen",
+            "+% Coconut Field Pollen"
+        ],
+        "image": "assets/beequips/Lei.png"
+    },
+    "Demon Talisman": {
+        "buffs": [
+            "+% Attack",
+            "+% Gather Amount",
+            "+% Ability Pollen",
+            "+% Gathering Flames Chance",
+            "+% Super-Crit Chance"
+        ],
+        "debuffs": [
+            "-% Movespeed",
+            "-% Energy",
+            "-% Max Bee Energy[Hive]",
+            "- Player Movespeed[Hive]",
+            "x- Blue Pollen[Hive]"
+        ],
+        "ability": [
+            "+Ability: Inferno"
+        ],
+        "bonuses": [
+            "+% Red Bomb Pollen",
+            "+% Flame Pollen",
+            "+% Instant Red Bomb Conversion",
+            "+% Instant Flame Conversion",
+            "+% Instant Demon Bee Conversion",
+            "+% Super-Crit Power"
+        ],
+        "image": "assets/beequips/Demon Talisman.png"
+    },
+    "Camphor Lip Balm": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Critical Power"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "x Pepper Patch Pollen",
+            "+% Bubble Pollen",
+            "+% Gold Bubble Pollen",
+            "+% Honey From Instant Conversion"
+        ],
+        "image": "assets/beequips/Camphor Lip Balm.png"
+    },
+    "Autumn Sunhat": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Convert Amount",
+            "+% White Gather Amount",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+ Capacity",
+            "+% Sunflower Field Pollen",
+            "+% Pumpkin Patch Pollen",
+            "+% White Pollen",
+            "+% White Field Capacity"
+        ],
+        "image": "assets/beequips/Autumn Sunhat.png"
+    },
+    "Rose Headband": {
+        "buffs": [
+            "+ Attack",
+            "+% Convert Amount",
+            "+% Gather Pollination Chance",
+            "+% Ability Rate",
+            "+% Critical Chance"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+ Capacity",
+            "+% Rose Field Pollen",
+            "+% Red Field Capacity",
+            "+% Instant Rose Field Conversion",
+            "+% Bee Attack"
+        ],
+        "image": "assets/beequips/Rose Headband.png"
+    },
+    "Pink Eraser": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Instant Conversion"
+        ],
+        "debuffs": [
+            "-% Mark Duration"
+        ],
+        "ability": [],
+        "bonuses": [
+            "+% Instant Red Bomb Conversion",
+            "+% Instant Bee Gather Conversion",
+            "+% Honey From Instant Conversion",
+            "+% Unique Instant Conversion"
+        ],
+        "image": "assets/beequips/Pink Eraser.png"
+    },
+    "Candy Ring": {
+        "buffs": [
+            "+ Energy",
+            "+% Convert Amount",
+            "+% Abiltiy Rate"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Honey At Hive",
+            "+% Honey Per Goo",
+            "x Honey From Tokens"
+        ],
+        "image": "assets/beequips/Candy Ring.png"
+    },
+    "Elf Cap": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Convert Rate At Hive"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Convert Rate At Hive",
+            "+% Honey At Hive"
+        ],
+        "image": "assets/beequips/Elf Cap.png"
+    },
+    "Single Mitten": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Bomb Pollen"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+ Capacity",
+            "+% Red Pollen"
+        ],
+        "image": "assets/beequips/Single Mitten.png"
+    },
+    "Warm Scarf": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Energy"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Red Field Capacity",
+            "+% White Field Capacity",
+            "+% Capacity"
+        ],
+        "image": "assets/beequips/Warm Scarf.png"
+    },
+    "Peppermint Antennas": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Gather Amount",
+            "+% Movespeed",
+            "+% Ability Rate",
+            "+% Ability Pollen"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Bee Ability Rate"
+        ],
+        "image": "assets/beequips/Peppermint Antennas.png"
+    },
+    "Beesmas Top": {
+        "buffs": [
+            "+% Critical Chance",
+            "+% Ability Rate",
+            "+% Energy",
+            "+ Attack"
+        ],
+        "debuffs": [
+            "-% Energy"
+        ],
+        "ability": [],
+        "bonuses": [
+            "+% Critical Power"
+        ],
+        "image": "assets/beequips/Beesmas Top.png"
+    },
+    "Pinecone": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Pine Tree Forest Capacity",
+            "+% Pine Tree Forest Pollen"
+        ],
+        "image": "assets/beequips/Pinecone.png"
+    },
+    "Icicles": {
+        "buffs": [
+            "+% Attack",
+            "+% Blue Bomb Pollen"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Cactus Field Pollen",
+            "+% Blue Bomb Pollen",
+            "+% Monster Respawn Time"
+        ],
+        "image": "assets/beequips/Icicles.png"
+    },
+    "Beesmas Tree Hat": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Critical Chance",
+            "+% Ability Pollen",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+ Capacity",
+            "+% Convert Rate At Hive"
+        ],
+        "image": "assets/beequips/Beesmas Tree Hat.png"
+    },
+    "Bubble Light": {
+        "buffs": [
+            "+ Convert Amount",
+            "+ Movespeed",
+            "+% Bubble Pollen",
+            "+% Mark Duration"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Bubble Pollen",
+            "+% Bee Movespeed"
+        ],
+        "image": "assets/beequips/Bubble Light.png"
+    },
+    "Snow Tiara": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Convert At Hive",
+            "+% Blue Gather Amount",
+            "+% White Gather Amount",
+            "+% Critical Chance"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Blue Field Capacity",
+            "+% White Field Capacity",
+            "+% Honey From Tokens"
+        ],
+        "image": "assets/beequips/Snow Tiara.png"
+    },
+    "Snowglobe": {
+        "buffs": [
+            "+% Bomb Pollen",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Snowglobe Shake"
+        ],
+        "bonuses": [
+            "+% Bomb Pollen"
+        ],
+        "image": "assets/beequips/Snowglobe.png"
+    },
+    "Reindeer Antlers": {
+        "buffs": [
+            "+% Convert Amount",
+            "+% Ability Pollen"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Focus",
+            "+Ability: Reindeer Fetch",
+            "+Ability: Baby Love"
+        ],
+        "bonuses": [
+            "+% Capacity",
+            "+% Bond From Treats"
+        ],
+        "image": "assets/beequips/Reindeer Antlers.png"
+    },
+    "Toy Horn": {
+        "buffs": [
+            "+ Convert Amount",
+            "+% Ability Pollen",
+            "+% Ability Rate"
+        ],
+        "debuffs": [
+            "-% Energy"
+        ],
+        "ability": [
+            "+Ability: Melody"
+        ],
+        "bonuses": [
+            "+% Bee Ability Pollen",
+            "+% Convert Rate"
+        ],
+        "image": "assets/beequips/Toy Horn.png"
+    },
+    "Paper Angel": {
+        "buffs": [
+            "+% White Gather",
+            "+% Ability Pollen"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Token Link"
+        ],
+        "bonuses": [
+            "+% Ability Token Lifespan",
+            "+% Bee Ability Pollen"
+        ],
+        "image": "assets/beequips/Paper Angel.png"
+    },
+    "Toy Drum": {
+        "buffs": [
+            "+ Gather Amount",
+            "+% Attack",
+            "+% Critical Chance"
+        ],
+        "debuffs": [
+            "-% Energy"
+        ],
+        "ability": [
+            "+Ability: Haste"
+        ],
+        "bonuses": [
+            "+% Bee Ability Pollen"
+        ],
+        "image": "assets/beequips/Toy Drum.png"
+    },
+    "Lump Of Coal": {
+        "buffs": [
+            "+% Bomb Pollen"
+        ],
+        "debuffs": [
+            "-% Energy",
+            "+% Movespeed"
+        ],
+        "ability": [],
+        "bonuses": [
+            "+% Bomb Pollen",
+            "+% Buzz Bomb Pollen",
+            "+% Blue Bomb Pollen",
+            "+% Red Bomb Pollen",
+            "+% Pollen",
+            "+% White Pollen",
+            "+% Red Pollen",
+            "+% Blue Pollen"
+        ],
+        "image": "assets/beequips/Lump Of Coal.png"
+    },
+    "Poinsettia": {
+        "buffs": [
+            "+% Red Gather Amount",
+            "+% Gather Pollination Chance"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Bee Gather Pollen",
+            "+% Red Pollen"
+        ],
+        "image": "assets/beequips/Poinsettia.png"
+    },
+    "Electric Candle": {
+        "buffs": [
+            "+ Red Gather Amount",
+            "+% Flames Pollen",
+            "+% Gathering Flames Chance",
+            "+% Energy"
+        ],
+        "debuffs": [],
+        "ability": [],
+        "bonuses": [
+            "+% Flames Pollen"
+        ],
+        "image": "assets/beequips/Electric Candle.png"
+    },
+    "Festive Wreath": {
+        "buffs": [
+            "+ Gather Amount",
+            "+ Convert Amount",
+            "+% Red Bomb Pollen",
+            "+% Mark Duration",
+            "+% Ability Rate"
+        ],
+        "debuffs": [],
+        "ability": [
+            "+Ability: Festive Mark"
+        ],
+        "bonuses": [
+            "+% Capacity",
+            "+% Ticket Chance",
+            "+% Red Bee Convert Rate",
+            "+% Honey At Hive"
+        ],
+        "image": "assets/beequips/Festive Wreath.png"
+    }
+} as Record<string, BeequipData>;
+
+interface BeequipData {
+    buffs: string[];
+    debuffs: string[];
+    ability: string[];
+    bonuses: string[];
+    image: string;
+}
+
+export const getBeequipData = (sticker: string) => {
+    return beequipData[sticker];
+};

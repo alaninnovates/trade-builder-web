@@ -1,0 +1,1909 @@
+{
+  "stickers": [
+    {
+      "name": "Brown Cub Skin",
+      "stack": "(+1% Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Robo Cub Skin",
+      "stack": "(+1% Duped Ability Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Stick Cub Skin",
+      "stack": "(+1% Bee Attack)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Star Cub Skin",
+      "stack": "(+1% Gifted Bee Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Noob Cub Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Bee Cub Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Gingerbread Cub Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Snow Cub Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Peppermint Robo Cub Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Doodle Cub Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Basic Red Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Basic Blue Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Basic Pink Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Basic Green Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Basic White Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Basic Black Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Wavy Yellow Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Wavy Cyan Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Wavy Purple Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Wavy Festive Hive Skin",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Wavy Doodle Hive Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Icy Crowned Hive Skin",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Cub Buddy Voucher",
+      "stack": "(+2% Honey From Tokens)",
+      "reward": "(3 Micro-Converters)"
+    },
+    {
+      "name": "Bear Bee Voucher",
+      "stack": "(+0.5% Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "x2 Bee Gather Voucher",
+      "stack": "(+2 Bee Gather Pollen)",
+      "reward": "(1 Glue)"
+    },
+    {
+      "name": "x2 Convert Speed Voucher",
+      "stack": "(+10 Convert Rate)",
+      "reward": "(1 Enzymes)"
+    },
+    {
+      "name": "Flying Rad Bee",
+      "stack": "(+2% Red Pollen)",
+      "reward": "(1 Red Extract)",
+      "bee": "Rad Bee"
+    },
+    {
+      "name": "Flying Ninja Bee",
+      "stack": "(+0.25% Bee Movespeed)",
+      "reward": "(1 Blue Extract)",
+      "bee": "Ninja Bee"
+    },
+    {
+      "name": "Flying Brave Bee",
+      "stack": "(+2 Rare Bee Attack)",
+      "reward": "(3 Stingers)",
+      "bee": "Brave Bee"
+    },
+    {
+      "name": "Flying Photon Bee",
+      "stack": "(+5% Instant Event Bee Conversion)",
+      "reward": "(1 Oil)",
+      "bee": "Photon Bee"
+    },
+    {
+      "name": "Drooping Stubborn Bee",
+      "stack": "(+1% Ability Token Lifespan)",
+      "reward": "(1 Oil)",
+      "bee": "Stubborn Bee"
+    },
+    {
+      "name": "Wobbly Looker Bee",
+      "stack": "(+1% Critical Power)",
+      "reward": "(1 Neonberry)",
+      "bee": "Looker Bee"
+    },
+    {
+      "name": "Blob Bumble Bee",
+      "stack": "(+5% Blue Bomb Pollen)",
+      "reward": "(1 Blue Extracts)",
+      "bee": "Mutated Bumble Bee",
+      "field": "Sunflower Field"
+    },
+    {
+      "name": "Round Rascal Bee",
+      "stack": "(+5% Red Bomb Pollen)",
+      "reward": "(1 Red Extracts)",
+      "bee": "Mutated Rascal Bee",
+      "field": "Sunflower Field"
+    },
+    {
+      "name": "Round Basic Bee",
+      "stack": "(x3 Common Bee Pollen)",
+      "reward": "(1 Basic Egg)",
+      "bee": "Mutated Basic Bee",
+      "field": "Pumpkin Patch"
+    },
+    {
+      "name": "Diamond Diamond Bee",
+      "stack": "(+5% Mutated Bee Convert Rate)",
+      "reward": "(10 Tickets)",
+      "bee": "Gifted Diamond Bee",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "4-Pronged Vector Bee",
+      "stack": "(+1% Mark Ability Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Shocked Hive Slot",
+      "stack": "(+1% White Pollen)",
+      "reward": "(50 Pineapples)",
+      "bee": "Shocked Bee",
+      "field": "Mushroom Field"
+    },
+    {
+      "name": "Bear Bee Offer",
+      "stack": "(+2% Event Bee Pollen)",
+      "reward": "(10 Tickets)",
+      "bee": "Gifted Bear Bee Bee",
+      "field": "Pineapple Patch"
+    },
+    {
+      "name": "Tabby Scratch",
+      "stack": "(+10% Scratch Pollen)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Tabby From Behind",
+      "stack": "(+1% Critical Power)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Fuzz Bomb",
+      "stack": "(+5% Buzz Bomb Pollen)",
+      "reward": "(10 Tickets)",
+      "bee": "Fuzzy Bee",
+      "field": "Bamboo Field"
+    },
+    {
+      "name": "Precise Eye",
+      "stack": "(+1% Super Crit Power)",
+      "reward": "(1 Hard Wax)",
+      "bee": "Precise Bee",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Chef Hat Polar Bear",
+      "stack": "(+5% Instant Colorless Bee Conversion)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Honey Bee Bear",
+      "stack": "(+2% Honey From Tokens)",
+      "reward": "(5 Tickets)",
+      "bee": "Honey Bee",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Bomber Bee Bear",
+      "stack": "(+5% Buzz Bomb Pollen)",
+      "reward": "(1 Loaded Dice)",
+      "bee": "Bomber Bee",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Uplooking Bear",
+      "stack": "(+1 Critical Power)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Sitting Green Shirt Bear",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(5 Tickets)",
+      "bee": "Bubble Bee",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Shy Brown Bear",
+      "stack": "(+0.25% Bee Ability Pollen)",
+      "reward": "(5 Royal Jellies)"
+    },
+    {
+      "name": "Sitting Mother Bear",
+      "stack": "(+1% White Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Sunflower Field"
+    },
+    {
+      "name": "Squashed Head Bear",
+      "stack": "(+1% Super Critical Power)",
+      "reward": "(25 Bitterberries)"
+    },
+    {
+      "name": "Stretched Head Bear",
+      "stack": "(+1% White Pollen)",
+      "reward": "(25 Bitterberries)",
+      "bee": "Wild Windy Bee"
+    },
+    {
+      "name": "Panicked Science Bear",
+      "stack": "(+5% Mutated Bee Convert Rate)",
+      "reward": "(1 Enzymes)",
+      "bee": "Radioactive Bees",
+      "field": "Pineapple Patch"
+    },
+    {
+      "name": "Dapper From Above",
+      "stack": "(+0.5% Pollen)",
+      "reward": "(1 Ticket Planter)"
+    },
+    {
+      "name": "Sideways Spirit Bear",
+      "stack": "(+10% Instant Tool Conversion)",
+      "reward": "(1 Glitters)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Glowering Gummy Bear",
+      "stack": "(+1% Honey Per Goo)",
+      "reward": "(1 Glue)"
+    },
+    {
+      "name": "Stranded Sun Bear",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Jelly Beans)"
+    },
+    {
+      "name": "Menacing Mantis",
+      "stack": "(+5% Pineapple Patch Pollen)",
+      "reward": "(1 Blue Extracts)",
+      "bee": "Rage Bee",
+      "mob": "Mantis",
+      "field": "Pine Tree Field"
+    },
+    {
+      "name": "Little Scorpion",
+      "stack": "(+5% Rose Field Pollen)",
+      "reward": "(1 Red Extracts)",
+      "bee": "Basic Bee",
+      "field": "Rose Field",
+      "mob": "Scorpion"
+    },
+    {
+      "name": "Left Facing Ant",
+      "stack": "(+1 Legendary Bee Attack)",
+      "reward": "(1 Ant Pass)",
+      "bee": "Lion Bee",
+      "field": "Ant Field"
+    },
+    {
+      "name": "Walking Stick Nymph",
+      "stack": "(+1% Bee Attack)",
+      "reward": "(3 Stingers)",
+      "mob": "Stick Nymphs"
+    },
+    {
+      "name": "Forward Facing Spider",
+      "stack": "(+10% Spider Field Capacity)",
+      "reward": "(1 Enzymes)",
+      "bee": "Demon Bee",
+      "field": "Spider Field",
+      "mob": "Spider"
+    },
+    {
+      "name": "Forward Facing Aphid",
+      "stack": "(+1% Bee Attack)",
+      "reward": "(1 Magic Beans)",
+      "mob": "Aphids"
+    },
+    {
+      "name": "Right Facing Stump Snail",
+      "stack": "(+5% Stump Field Pollen)",
+      "reward": "(1 Glue)",
+      "mob": "Stump Snail"
+    },
+    {
+      "name": "Standing Bean Bug",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(5 Jelly Beans)",
+      "mob": "Bean Bugs"
+    },
+    {
+      "name": "Small Blue Chick",
+      "stack": "(+2% Blue Pollen)",
+      "reward": "(1 Blue Extracts)",
+      "mob": "Mondo Chick"
+    },
+    {
+      "name": "Tadpole",
+      "stack": "(+3% Bubble Pollen)",
+      "reward": "(1 Blue Extracts)",
+      "bee": "Tadpole Bee",
+      "field": "Mushroom Field"
+    },
+    {
+      "name": "Happy Fish",
+      "stack": "(+3% Bubble Pollen)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Coiled Snake",
+      "stack": " (+1 Epic Bee Attack)",
+      "reward": "(3 Stingers)"
+    },
+    {
+      "name": "Standing Caterpillar",
+      "stack": "(+10% Rare Bee Pollen)",
+      "reward": "(1 Enzymes)",
+      "field": "Pineapple Patch"
+    },
+    {
+      "name": "Round Green Critter",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(1 Magic Beans)",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Flying Magenta Critter",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(1 Magic Beans)",
+      "field": "Dandelion Field"
+    },
+    {
+      "name": "Blue Triangle Critter",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(1 Magic Beans)",
+      "field": "Blue Flower Field"
+    },
+    {
+      "name": "Purple Pointed Critter",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(1 Magic Beans)",
+      "field": "Cactus Field"
+    },
+    {
+      "name": "Orange Leg Critter",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(1 Magic Beans)",
+      "field": "Pumpkin Patch"
+    },
+    {
+      "name": "Green Plus Sign",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Green Check Mark",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Red X",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(1 Red Extracts)"
+    },
+    {
+      "name": "Alert Icon",
+      "stack": "(+5% Red Bomb Pollen)",
+      "reward": "(3 Micro-Converters)"
+    },
+    {
+      "name": "Yellow Right Arrow",
+      "stack": "(+5% Instant Bee Gather Conversion)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Yellow Left Arrow",
+      "stack": "(+5% Instant Bee Gather Conversion)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Simple Sun",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(5 Tickets)",
+      "field": "Any Field"
+    },
+    {
+      "name": "Pink Cupcake",
+      "stack": "(+0.5% Honey Per Goo)",
+      "reward": "(50 Strawberry)",
+      "bee": "Gifted Stubborn Bee",
+      "field": "Strawberry Field"
+    },
+    {
+      "name": "Rubber Duck",
+      "stack": "(+10% Rare Bee Pollen)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Baseball Swing",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(5 Jelly Beans)"
+    },
+    {
+      "name": "Yellow Coffee Mug",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(1 Oil)"
+    },
+    {
+      "name": "Launching Rocket",
+      "stack": "(+15,000 Capacity)",
+      "reward": "(10 Whirligigs)",
+      "bee": "Gummy Bee",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Thumbs Up Hand",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(5 Tickets)",
+      "bee": "Gifted Cool Bee",
+      "field": "Stump Field"
+    },
+    {
+      "name": "Peace Sign Hand",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(5 Tickets)",
+      "bee": "Gifted Cool Bee",
+      "field": "Pepper Patch"
+    },
+    {
+      "name": "Traffic Light",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(3 Neonberries)",
+      "bee": "Shocked Bee"
+    },
+    {
+      "name": "Window",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "Simple Skyscraper",
+      "stack": "(+1% Honey At Hive)",
+      "reward": "(3 Micro-Converters)",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Simple Mountain",
+      "stack": "(+10% Mountain Top Field Pollen)",
+      "reward": "(10 Whirligigs)",
+      "bee": "Basic Bee",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Pale Heart",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(50 Strawberry)",
+      "bee": "Baby Bee, Puppy Bee",
+      "field": "Strawberry Field"
+    },
+    {
+      "name": "Colorful Buttons",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(5 Jelly Beans)"
+    },
+    {
+      "name": "Giraffe",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Silly Tongue",
+      "stack": "(+2% Honey From Tokens)",
+      "reward": "(25 Gumdrops)",
+      "bee": "Rascal Bee",
+      "field": "Pineapple Patch"
+    },
+    {
+      "name": "White Flag",
+      "stack": "(+2% White Pollen)",
+      "reward": "(1 Oil)",
+      "field": "Spider Field"
+    },
+    {
+      "name": "Pyramid",
+      "stack": "(+5% Cactus Field Pollen)",
+      "reward": "(5 Tickets)",
+      "bee": "Lion Bee",
+      "field": "Cactus Field"
+    },
+    {
+      "name": "Tiny House",
+      "stack": "(+10% Convert Rate At Hive)",
+      "reward": "(50 Sunflower Seeds)"
+    },
+    {
+      "name": "TNT",
+      "stack": "(+2% Bomb Pollen)",
+      "reward": "(3 Soft Waxes)",
+      "bee": "Demo Bee"
+    },
+    {
+      "name": "Wishbone",
+      "stack": "(+1% Critical Power)",
+      "reward": "(5 Field Dice)",
+      "field": "Cactus Field"
+    },
+    {
+      "name": "Yellow Umbrella",
+      "stack": "(+10% Instant Rare Bee Conversion)",
+      "reward": "(1 Cloud Vial)"
+    },
+    {
+      "name": "Red Palm Hand",
+      "stack": "(+1% Red Field Capacity)",
+      "reward": "(1 Hard Wax)",
+      "bee": "Rage Bee",
+      "field": "Stump Field"
+    },
+    {
+      "name": "Yellow Sticky Hand",
+      "stack": "(+0.5% Honey Per Goo)",
+      "reward": "(1 Glue)",
+      "bee": "Gummy Bee",
+      "field": "Sunflower Field"
+    },
+    {
+      "name": "Yellow Walking Wiggly Person",
+      "stack": "(+5% Movement Collection Pollen)",
+      "reward": "(25 Gumdrops)"
+    },
+    {
+      "name": "Green SELL",
+      "stack": "(+10% Convert Rate At Hive)",
+      "reward": "(5 Tickets)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Yellow Hi",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(1 Enzymes)"
+    },
+    {
+      "name": "AFK",
+      "stack": "(+10% Convert Rate At Hive)",
+      "reward": "(1 Red Extracts)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Auryn",
+      "stack": "(+3% Capacity)",
+      "reward": "(1 Swirled Wax)"
+    },
+    {
+      "name": "Pink Chair",
+      "stack": "(+0.25% Bee Ability Pollen)",
+      "reward": "(10 Tickets)",
+      "bee": "Shy Bee"
+    },
+    {
+      "name": "Doodle S",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Spider Field"
+    },
+    {
+      "name": "Triple Exclamation",
+      "stack": "(+1% Critical Power)",
+      "reward": "(1 Loaded Dice)"
+    },
+    {
+      "name": "Eighth Note",
+      "stack": "(+1% Critical Power)",
+      "reward": "(5 Tickets)",
+      "bee": "Music Bee"
+    },
+    {
+      "name": "Eviction",
+      "stack": "(+20,000 Capacity)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Fork And Knife",
+      "stack": "(+2% White Field Capacity)",
+      "reward": "(500 Treats)"
+    },
+    {
+      "name": "Shining Halo",
+      "stack": "(+0.5% Pollen)",
+      "reward": "(1 Glitters)"
+    },
+    {
+      "name": "Rhubarb",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(50 Pineapples)",
+      "field": "Pineapple Patch"
+    },
+    {
+      "name": "Sprout",
+      "stack": "(+1% Capacity)",
+      "reward": "(1 Magic Beans)"
+    },
+    {
+      "name": "Palm Tree",
+      "stack": "(+10% Coconut Field Pollen)",
+      "reward": "(10 Coconuts)",
+      "field": "Coconut Field"
+    },
+    {
+      "name": "Jack-O-Lantern",
+      "stack": "(+10% Pumpkin Patch Capacity)",
+      "reward": "(3 Soft Waxes)",
+      "bee": "Rascal Bee",
+      "field": "Pumpkin Patch"
+    },
+    {
+      "name": "Lightning",
+      "stack": "(+1% Tool Swing Speed)",
+      "reward": "(3 Micro-Converters)"
+    },
+    {
+      "name": "Simple Cloud",
+      "stack": "(+1% White Pollen)",
+      "reward": "(1 Cloud Vials)",
+      "bee": "Wild Windy Bee"
+    },
+    {
+      "name": "Grey Raining Cloud",
+      "stack": "(+2% Blue Pollen)",
+      "reward": "(3 Cloud Vials)",
+      "bee": "Wild Windy Bee",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Tornado",
+      "stack": "(+5% Tornado Pollen)",
+      "reward": "(3 Cloud Vials)",
+      "bee": "Wild Windy Bee"
+    },
+    {
+      "name": "Small Flame",
+      "stack": "(+3% Flame Pollen)",
+      "reward": "(1 Red Extract)",
+      "bee": "Fire Bee",
+      "field": "Bllue Flower Field"
+    },
+    {
+      "name": "Dark Flame",
+      "stack": "(+3% Flame Pollen)",
+      "reward": "(5 Stingers)",
+      "bee": "Demon Bee",
+      "field": "Pine Tree Field"
+    },
+    {
+      "name": "Small Shield",
+      "stack": "(+0.5% Dodge Chance)",
+      "reward": "(1 Hard Wax)",
+      "mob": "Armored Aphids"
+    },
+    {
+      "name": "Robot Head",
+      "stack": "(+1% Duped Ability Pollen)",
+      "reward": "(1 Robo Pass)"
+    },
+    {
+      "name": "Cyan Hilted Sword",
+      "stack": "(+2% Bee Attack)",
+      "reward": "(10 Stingers)"
+    },
+    {
+      "name": "Cool Backpack",
+      "stack": "(+1% Capacity)",
+      "reward": "(1 Blue Extracts)",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Standing Beekeeper",
+      "stack": "(+2% White Pollen)",
+      "reward": "(1 Oil)"
+    },
+    {
+      "name": "Red Wailing Cry",
+      "stack": "(+2% Instant Red Bee Conversion)",
+      "reward": "(3 Stingers)",
+      "mob": "Rage Aphid"
+    },
+    {
+      "name": "Hourglass",
+      "stack": "(+20,000 Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Atom Symbol",
+      "stack": "(+5% Instant Bomb Conversion)",
+      "reward": "(5 Neonberries)",
+      "bee": "Radioactive Bees"
+    },
+    {
+      "name": "Barcode",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(3 Soft Waxes)",
+      "bee": "Digital Bee"
+    },
+    {
+      "name": "Wall Crack",
+      "stack": "(+10% Colorless Bee Convert Rate)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Green Circle",
+      "stack": "(+1% Critical Power)",
+      "reward": "(3 Tickets)",
+      "bee": "Commander Bee"
+    },
+    {
+      "name": "Blue Square",
+      "stack": "(+2% Critical Power)",
+      "reward": "(3 Tickets)",
+      "bee": "Bumble Bee"
+    },
+    {
+      "name": "Black Diamond",
+      "stack": "(+3% Critical Power)",
+      "reward": "(1 Caustic Wax)",
+      "bee": "Diamond Bee"
+    },
+    {
+      "name": "Waxing Crescent Moon",
+      "stack": "(+1% Capacity)",
+      "reward": "(10 Moon Charmss)"
+    },
+    {
+      "name": "Glowing Smile",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)"
+    },
+    {
+      "name": "Saturn",
+      "stack": "(+1% Mark Ability Pollen)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Black Star",
+      "stack": "(+3% Bomb Pollen)",
+      "reward": "(1 Black Balloons)"
+    },
+    {
+      "name": "Cyan Star",
+      "stack": "(+3% Instant Gifted Bee Conversion)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Shining Star",
+      "stack": "(+0.5% Gifted Bee Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Grey Diamond Logo",
+      "stack": "(+2% Event Bee Pollen)",
+      "reward": "(3 Micro-Converters)"
+    },
+    {
+      "name": "Orphan Dog",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Pizza Delivery Man",
+      "stack": "(+10% Red Bee Convert Rate)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Interrobang Block",
+      "stack": "(+1% Critical Power)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Theatrical Intruder",
+      "stack": "(+1% Bee Attack)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Desperate Booth",
+      "stack": "(+2% Honey From Tokens)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Built Ship",
+      "stack": "(+2% Blue Field Capacity)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Grey Shape Companion",
+      "stack": "(+2% Honey From Token)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Evil Pig",
+      "stack": "(+1 Epic Bee Attack)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Waving Townsperson",
+      "stack": "(+10% Blue Bee Convert Rate)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Cop And Robber",
+      "stack": "(+0.5 Blue Bee Attack)",
+      "reward": "(3 Tickets)"
+    },
+    {
+      "name": "Tough Potato",
+      "stack": "(+1% Bee Attack)",
+      "reward": "(3 Stingers)"
+    },
+    {
+      "name": "Young Elf",
+      "stack": "(+2% Ungifted Bee Pollen)",
+      "reward": "(5 Paper Planters)",
+      "field": "Cactus Field"
+    },
+    {
+      "name": "Shrugging Heart",
+      "stack": "(+2% Red Pollen)",
+      "reward": "(1 Red Extracts)",
+      "field": "Rose Field"
+    },
+    {
+      "name": "Classic Killroy",
+      "stack": "(+1% White Pollen)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Killroy With Hair",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(5 Tickets)"
+    },
+    {
+      "name": "Taunting Doodle Person",
+      "stack": "(+1% Critical Power)",
+      "reward": "(1 Enzymes)"
+    },
+    {
+      "name": "Prehistoric Hand",
+      "stack": "(+20% Convert Rate)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Prehistoric Boar",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Red Doodle Person",
+      "stack": "(+2% Red Field Capacity)",
+      "reward": "(1 Red Extracts)"
+    },
+    {
+      "name": "Pearl Girl",
+      "stack": "(+2% White Field Capacity)",
+      "reward": "(1 Swirled Wax)"
+    },
+    {
+      "name": "Abstract Color Painting",
+      "stack": "(+20,000 Capacity)",
+      "reward": "(1 Purple Potion)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Prism Painting",
+      "stack": "(+5% Legendary Bee Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Banana Painting",
+      "stack": "(+5% Legendary Bee Pollen)",
+      "reward": "(1 Purple Potion)"
+    },
+    {
+      "name": "Moai",
+      "stack": "(+2% Capacity)",
+      "reward": "(10 Tickets)",
+      "bee": "Exhausted Bee"
+    },
+    {
+      "name": "Nessie",
+      "stack": "(+2% Event Bee Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Ionic Column Top",
+      "stack": "(+20,000 Capacity)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Ionic Column Middle",
+      "stack": "(+20,000 Capacity)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Ionic Column Base",
+      "stack": "(+20,000 Capacity)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Orange Step Array",
+      "stack": "(+5 Convert Amount)",
+      "reward": "(1 Enzymes)",
+      "bee": "Hasty Bee",
+      "field": "Sunflower Field, Pumpkin Patch"
+    },
+    {
+      "name": "Orange Green Tri Deco",
+      "stack": "(+5 Convert Amount)",
+      "reward": "(1 Enzymes)",
+      "field": "Dandelion Field, Pumpkin Patch"
+    },
+    {
+      "name": "Orange Swirled Marble",
+      "stack": "(+3% Flame Pollen)",
+      "reward": "(3 Smooth Dice)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Blue And Green Marble",
+      "stack": "(+2% Blue Pollen)",
+      "reward": "(3 Smooth Dice)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Yellow Swirled Marble",
+      "stack": "+0.5% (Honey Per Pollen)",
+      "reward": "(3 Smooth Dice)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Diamond Cluster",
+      "stack": "(+15% Convert Rate)",
+      "reward": "(10 Tickets)",
+      "bee": "Gifted Diamond Bee"
+    },
+    {
+      "name": "Diamond Trim",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)",
+      "mob": "Diamond Aphids",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Cyan Decorative Border",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Left Gold Swirled Fleuron",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)",
+      "mob": "Stump Snail"
+    },
+    {
+      "name": "Right Gold Swirled Fleuron",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)",
+      "mob": "Stump Snail"
+    },
+    {
+      "name": "Left Shining Diamond Fleuron",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Right Shining Diamond Fleuron",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Left Mythic Gem Fleuron",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Right Mythic Gem Fleuron",
+      "stack": "(+0.5% Honey Per Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Purple Fleuron",
+      "stack": "(+1% Super Critical Power)",
+      "reward": "(1 Purple Potion)"
+    },
+    {
+      "name": "Royal Symbol",
+      "stack": "(+1% Super Critical Power)",
+      "reward": "(1 Purple Potion)"
+    },
+    {
+      "name": "Royal Bear",
+      "stack": "(+1% Super Critical Power)",
+      "reward": "(1 Purple Potion)"
+    },
+    {
+      "name": "Mythic M",
+      "stack": "(+1% Mythic Bee Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Satisfying Nectar Icon",
+      "stack": "(+2% White Pollen)",
+      "reward": "(1 Satisfying Vial)"
+    },
+    {
+      "name": "Refreshing Nectar Icon",
+      "stack": "(+1% Unique Instant Conversion)",
+      "reward": "(1 Refreshing Vial)"
+    },
+    {
+      "name": "Motivating Nectar Icon",
+      "stack": "(+0.25% Bee Ability Rate)",
+      "reward": "(1 Motivating Vial)"
+    },
+    {
+      "name": "Invigorating Nectar Icon",
+      "stack": "(+2% Red Pollen)",
+      "reward": "(1 Invigorating Vial)"
+    },
+    {
+      "name": "Comforting Nectar Icon",
+      "stack": "(+2% Blue Pollen)",
+      "reward": "(1 Comforting Vial)"
+    },
+    {
+      "name": "Small Tickseed",
+      "stack": "(+5% Sunflower Field Pollen)",
+      "reward": "(10 Honeysuckles)",
+      "bee": "Bucko Bee",
+      "field": "Sunflower Field, Pumpkin Patch, Clover Field"
+    },
+    {
+      "name": "Small White Daisy",
+      "stack": "(+1% White Pollen)",
+      "reward": "(10 Honeysuckles)",
+      "bee": "Hasty Bee",
+      "field": "Spider Field, Pineapple Patch"
+    },
+    {
+      "name": "Small Pink Tulip",
+      "stack": "(+5% Mushroom Field Pollen)",
+      "reward": "(10 Honeysuckles)",
+      "bee": "Riley Bee",
+      "field": "Mushroom Field, Strawberrt Field"
+    },
+    {
+      "name": "Small Dandelion",
+      "stack": "(+5% Dandelion Field Pollen)",
+      "reward": "(10 Honeysuckles)",
+      "bee": "Frosty Bee",
+      "field": "Dandelion Field, Clover Field"
+    },
+    {
+      "name": "Purple 4-Point Flower",
+      "stack": "(+1% Super Critical Power)",
+      "reward": "(10 Tickets)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Spore Covered Puffshroom",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "White Button Mushroom",
+      "stack": "(+25% Common Bee Pollen)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "Fly Agaric Mushroom",
+      "stack": "(+10% Rare Bee Pollen)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "Porcini Mushroom",
+      "stack": "(+5% Epic Bee Pollen)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "Oiler Mushroom",
+      "stack": "(+5% Epic Bee Pollen)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "Morel Mushroom",
+      "stack": "(+10% Rare Bee Pollen)",
+      "reward": "(3 Soft Waxes)",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Chanterelle Mushroom",
+      "stack": "(+5% Epic Bee Pollen)",
+      "reward": "(3 Soft Waxes)"
+    },
+    {
+      "name": "Shiitake Mushroom",
+      "stack": "(+1% Event Bee Pollen)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Black Truffle Mushroom",
+      "stack": "(+5% Legendary Bee Pollen)",
+      "reward": "(1 Hard Wax)"
+    },
+    {
+      "name": "Prismatic Mushroom",
+      "stack": "(+1% Mythic Bee Pollen)",
+      "reward": "(1 Caustic Wax)"
+    },
+    {
+      "name": "Blowing Leaf",
+      "stack": "(+1% White Pollen)",
+      "reward": "(3 Cloud Vials)",
+      "bee": "Wild Windy Bee"
+    },
+    {
+      "name": "Cordate Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Rose Field, Sunflower Field"
+    },
+    {
+      "name": "Cunate Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Pumpkin Patch, Strawberry Field"
+    },
+    {
+      "name": "Elliptic Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Pine Tree Field, Blue Flower Field"
+    },
+    {
+      "name": "Hastate Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Pepper Patch, Spider Field"
+    },
+    {
+      "name": "Lanceolate Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Bamboo Field, Dandelion Field"
+    },
+    {
+      "name": "Lyrate Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Mountain Top Field, Clover Field"
+    },
+    {
+      "name": "Oblique Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Hub Field, Coconut Field"
+    },
+    {
+      "name": "Reniform Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Mushroom Field, Stump Field"
+    },
+    {
+      "name": "Rhomboid Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Cactus Field, Stump Field"
+    },
+    {
+      "name": "Spatulate Leaf",
+      "stack": "(+1% Capacity)",
+      "reward": "(5 Tickets)",
+      "field": "Pine Tree Field, Pineapple Patch"
+    },
+    {
+      "name": "Scooper",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Mountain Top Field, Hub Field"
+    },
+    {
+      "name": "Rake",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Coconut Field, Hub Field"
+    },
+    {
+      "name": "Clippers",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Pine Tree Field"
+    },
+    {
+      "name": "Magnet",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Pineapple Patch"
+    },
+    {
+      "name": "Vacuum",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(Tickets)",
+      "field": "Hub Field, Rose Field"
+    },
+    {
+      "name": "Super-Scooper",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Clover Field"
+    },
+    {
+      "name": "Pulsar",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Neonberries)",
+      "field": "Hub Field, Spider Field"
+    },
+    {
+      "name": "Electro-Magnet",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Stump Field"
+    },
+    {
+      "name": "Scissors",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Pumpkin Patch"
+    },
+    {
+      "name": "Honey Dipper",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Pepper Patch"
+    },
+    {
+      "name": "Bubble Wand",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(1 Blue Extracts)",
+      "field": "Hub Field, Strawberry Field"
+    },
+    {
+      "name": "Scythe",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(1 Red Extracts)",
+      "field": "Hub Field, Bamboo Field"
+    },
+    {
+      "name": "Golden Rake",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Tickets)",
+      "field": "Hub Field, Cactus Field"
+    },
+    {
+      "name": "Spark Staff",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Micro-Converters)",
+      "field": "Hub Field, Mountain Top Field"
+    },
+    {
+      "name": "Porcelain Dipper",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(3 Soft Waxes)",
+      "field": "Hub Field, Sunflower Field"
+    },
+    {
+      "name": "Petal Wand",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(10 Moon Charms)",
+      "field": "Hub Field, Dandelion Field"
+    },
+    {
+      "name": "Tide Popper",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(1 Blue Extracts)",
+      "field": "Hub Field, Mushroom Field"
+    },
+    {
+      "name": "Dark Scythe",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(1 Red Extracts)",
+      "field": "Hub Field, Blue Flower Field"
+    },
+    {
+      "name": "Gummyballer",
+      "stack": "(+2% Pollen From Tools)",
+      "reward": "(25 Gumdrops)",
+      "field": "Hub Field, Clover Field"
+    },
+    {
+      "name": "Capricorn Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Stump Field"
+    },
+    {
+      "name": "Aquarius Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Mushroom Field"
+    },
+    {
+      "name": "Pisces Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Pineapple Patch"
+    },
+    {
+      "name": "Aries Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Pepper Patch"
+    },
+    {
+      "name": "Taurus Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Rose Field"
+    },
+    {
+      "name": "Gemini Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Dandelion Field"
+    },
+    {
+      "name": "Cancer Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Stump Field"
+    },
+    {
+      "name": "Leo Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Sunflower Field"
+    },
+    {
+      "name": "Virgo Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Bamboo Field"
+    },
+    {
+      "name": "Libra Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Blue Flower Field"
+    },
+    {
+      "name": "Scorpio Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Spider Field"
+    },
+    {
+      "name": "Sagittarius Star Sign",
+      "stack": "(+2% Capacity)",
+      "reward": "(1 Glitters)",
+      "field": "Mountain Top Field"
+    },
+    {
+      "name": "Sunflower Field Stamp",
+      "stack": "(+10% Sunflower Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Sunflower Field"
+    },
+    {
+      "name": "Dandelion Field Stamp",
+      "stack": "(+10% Dandelion Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Dandelion Field"
+    },
+    {
+      "name": "Mushroom Field Stamp",
+      "stack": "(+10% Mushroom Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Mushroom Field"
+    },
+    {
+      "name": "Blue Flower Field Stamp",
+      "stack": "(+10% Blue Flower Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Blue Flower Field"
+    },
+    {
+      "name": "Clover Field Stamp",
+      "stack": "(+10% Clover Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Clover Field"
+    },
+    {
+      "name": "Strawberry Field Stamp",
+      "stack": "(+10% Strawberry Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Strawberry Field"
+    },
+    {
+      "name": "Spider Field Stamp",
+      "stack": "(+10% Spider Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Spider Field"
+    },
+    {
+      "name": "Bamboo Field Stamp",
+      "stack": "(+10% Bamboo Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Bamboo Field"
+    },
+    {
+      "name": "Pineapple Patch Stamp",
+      "stack": "(+10% Pineapple Patch Field Pollen)",
+      "field": "Pineapple Patch",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Stump Field Stamp",
+      "stack": "(+10% Stump Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Stump Field"
+    },
+    {
+      "name": "Cactus Field Stamp",
+      "stack": "(+10% Cactus Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Cactus Field"
+    },
+    {
+      "name": "Pumpkin Patch Stamp",
+      "stack": "(+10% Pumpkin Patch Field Pollen)",
+      "field": "Pumpkin Patch",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Pine Tree Forest Stamp",
+      "stack": "(+10% Pine Tree Field Pollen)",
+      "field": "Pine Tree Field",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Rose Field Stamp",
+      "stack": "(+10% Rose Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Rose Field"
+    },
+    {
+      "name": "Hub Field Stamp",
+      "stack": "(+10% Hub Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Hub Field"
+    },
+    {
+      "name": "Mountain Top Field Stamp",
+      "stack": "(+10% Mountain Top Field Pollen)",
+      "field": "Hub Field",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Pepper Patch Stamp",
+      "stack": "(+10% Pepper Patch Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Pepper Patch"
+    },
+    {
+      "name": "Coconut Field Stamp",
+      "stack": "(+10% Coconut Field Pollen)",
+      "reward": "(10 Tickets)",
+      "field": "Coconut Field"
+    },
+    {
+      "name": "Ant Field Stamp",
+      "stack": "(+0.5% Bee Attack)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Gamer Chat Icon",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Play Button",
+      "stack": "(+10,000 Capacity)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Green Beesmas Light",
+      "stack": "(+1% Critical Power)",
+      "reward": "(3 Neonberries)"
+    },
+    {
+      "name": "Blue Beesmas Light",
+      "stack": "(+2% Blue Pollen)",
+      "reward": "(3 Neonberries)"
+    },
+    {
+      "name": "Red Beesmas Light",
+      "stack": "(+2% Red Pollen)",
+      "reward": "(3 Neonberries)"
+    },
+    {
+      "name": "Yellow Beesmas Light",
+      "stack": "(+10% Convert Rate)",
+      "reward": "(3 Neonberries)"
+    },
+    {
+      "name": "Critter In A Stocking",
+      "stack": "(+2% Bee Gathering Pollen)",
+      "reward": "(1 Magic Beans)"
+    },
+    {
+      "name": "Flying Festive Bee",
+      "stack": "(+10% Red Bee Convert Rate)",
+      "reward": "(1 Red Extracts)",
+      "bee": "Festive Bee"
+    },
+    {
+      "name": "Flying Bee Bear",
+      "stack": "(+1% Event Bee Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Party Robo Bear",
+      "stack": "(+1% Duped Ability Pollen)",
+      "reward": "(1 Robo Pass)"
+    },
+    {
+      "name": "Festive Pufferfish",
+      "stack": "(+2% Bomb Pollen)",
+      "reward": "(10 Tickets)"
+    },
+    {
+      "name": "Festive Pea",
+      "stack": "(+0.5% Bee Attack)",
+      "reward": "(1 Magic Beans)"
+    },
+    {
+      "name": "BBM From Below",
+      "stack": "(x1.01 Pollen)",
+      "reward": "(1 Box-O-Frogs)"
+    }
+  ],
+  "beequips": [
+    {
+      "name": "Thimble",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Convert Amount",
+      "bonuses": "+% Convert Rate, x Convert Rate"
+    },
+    {
+      "name": "Sweatband",
+      "type": "beequip",
+      "buffs": "+% Energy, +% White Gather Amount, +% Red Gather Amount, +% Blue Gather Amount",
+      "bonuses": "+% White Pollen, +% Red Pollen, +% Blue Pollen, +% Max Bee Energy, +% Pollen"
+    },
+    {
+      "name": "Bandage",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Energy, +% Attack",
+      "bonuses": "x Bee Attack"
+    },
+    {
+      "name": "Thumbtack",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Critical Power, +% Attack, + Attack",
+      "bonuses": "+% Red Bee Attack, +% Bee Attack"
+    },
+    {
+      "name": "Camo Bandana",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Buzz Bomb Pollen, + Attack, +% Critical Power, +% Super Crit Power",
+      "bonuses": "+% Buzz Bomb Pollen, +% Pumpkin Patch Capacity, +% Coconut Field Capacity, +% Super-Crit Power"
+    },
+    {
+      "name": "Bottle Cap",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Critical Chance, +% Critical Power",
+      "ability": "+Ability: Buzz Bomb",
+      "debuffs": "",
+      "bonuses": "+% Critical Power"
+    },
+    {
+      "name": "Kazoo",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Critical Power",
+      "debuffs": "-% Energy",
+      "ability": "+Ability: Melody",
+      "bonuses": "+% Critical Power, +% Super-Crit Power"
+    },
+    {
+      "name": "Smiley Sticker",
+      "type": "beequip",
+      "buffs": "+% Energy, +% Bomb Pollen, +% Critical Power, +% Mark Duration",
+      "ability": "+Ability: Honey Mark, +Ability: Blue Bomb",
+      "bonuses": "+% Mark Duration, +% Max Bee Energy"
+    },
+    {
+      "name": "Whistle",
+      "type": "beequip",
+      "buffs": "+% Movespeed, +% Critical Power",
+      "debuffs": "-% Energy",
+      "ability": "+Ability: Haste, +Ability: Melody",
+      "bonuses": "+% Bee Movespeed, +% Super-Crit Power, x Player Movespeed"
+    },
+    {
+      "name": "Charm Bracelet",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Critical Chance, +% Mark Duration, +% Ability Rate",
+      "ability": "+Ability: Melody",
+      "bonuses": "+% Loot Luck, +% Honey At Hive, +% Convert Rate At Hive, +% Honey From Tokens, +% Blue Flower Field Pollen, +% Dandelion Field Pollen, +% Mushroom Field Pollen, +% Sunflower Field Pollen"
+    },
+    {
+      "name": "Paperclip",
+      "type": "beequip",
+      "buffs": "+% Ability Rate, +% Ability Pollen, +% Convert Rate At Hive",
+      "ability": "+Ability: Token Link",
+      "bonuses": "+% Ability Token Lifespan, +% Bee Ability Pollen"
+    },
+    {
+      "name": "Beret",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Convert Amount, +% Ability Pollen",
+      "ability": "+Ability: Blue Boost",
+      "bonuses": "+ Capacity, +% Blue Field Capacity, +% Capacity"
+    },
+    {
+      "name": "Bang Snap",
+      "type": "beequip",
+      "buffs": "+% Bomb Pollen, +% Critical Chance",
+      "ability": "+Ability: Buzz Bomb, +Ability: Red Bomb, +Ability: Blue Bomb, +Ability: Buzz Bomb(+), +Ability: Red Bomb(+), +Ability: Blue Bomb(+), +Ability: Honey Mark",
+      "bonuses": "+ Instant Bomb Conversion, +% Instant Buzz Bomb Conversion, +% Red Bomb Conversion, +% Blue Bomb Conversion"
+    },
+    {
+      "name": "Bead Lizard",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Gathering Flames Chance, +% Gathering Bubbles Chance",
+      "ability": "+Ability: Token Link",
+      "bonuses": "+% Bubble Pollen, +% Flame Pollen, +% Bee Ability Pollen"
+    },
+    {
+      "name": "Pink Shades",
+      "type": "beequip",
+      "buffs": "+% Ability, +% Critical Power, +% Critical Chance, +% Super-Crit Chance",
+      "ability": "+Ability: Focus",
+      "bonuses": "+% Super-Crit Chance, +% Super-Crit Power"
+    },
+    {
+      "name": "Lei",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Gather Amount, +% Gather Pollination Chance, +% Ability Rate",
+      "ability": "+Ability: Red Boost, +Ability: Blue Boost",
+      "bonuses": "+% Sunflower Field Pollen, +% Blue Field Pollen, +% Rose Field Pollen, +% Coconut Field Pollen"
+    },
+    {
+      "name": "Demon Talisman",
+      "type": "beequip",
+      "buffs": "+% Attack, +% Gather Amount, +% Ability Pollen, +% Gathering Flames Chance, +% Super-Crit Chance",
+      "debuffs": "-% Movespeed, -% Energy, -% Max Bee Energy[Hive], - Player Movespeed[Hive], x- Blue Pollen[Hive]",
+      "ability": "+Ability: Inferno",
+      "bonuses": "+% Red Bomb Pollen, +% Flame Pollen, +% Instant Red Bomb Conversion, +% Instant Flame Conversion, +% Instant Demon Bee Conversion, +% Super-Crit Power"
+    },
+    {
+      "name": "Camphor Lip Balm",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Critical Power",
+      "bonuses": "x Pepper Patch Pollen, +% Bubble Pollen, +% Gold Bubble Pollen, +% Honey From Instant Conversion"
+    },
+    {
+      "name": "Autumn Sunhat",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Convert Amount, +% White Gather Amount, +% Ability Rate",
+      "bonuses": "+ Capacity, +% Sunflower Field Pollen, +% Pumpkin Patch Pollen, +% White Pollen, +% White Field Capacity"
+    },
+    {
+      "name": "Rose Headband",
+      "type": "beequip",
+      "buffs": "+ Attack, +% Convert Amount, +% Gather Pollination Chance, +% Ability Rate, +% Critical Chance",
+      "bonuses": "+ Capacity, +% Rose Field Pollen, +% Red Field Capacity, +% Instant Rose Field Conversion, +% Bee Attack"
+    },
+    {
+      "name": "Pink Eraser",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Instant Conversion",
+      "debuffs": "-% Mark Duration",
+      "bonuses": "+% Instant Red Bomb Conversion, +% Instant Bee Gather Conversion, +% Honey From Instant Conversion, +% Unique Instant Conversion"
+    },
+    {
+      "name": "Candy Ring",
+      "type": "beequip",
+      "buffs": "+ Energy, +% Convert Amount, +% Abiltiy Rate",
+      "bonuses": "+% Honey At Hive, +% Honey Per Goo, x Honey From Tokens"
+    },
+    {
+      "name": "Elf Cap",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Convert Rate At Hive",
+      "bonuses": "+% Convert Rate At Hive, +% Honey At Hive"
+    },
+    {
+      "name": "Single Mitten",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Bomb Pollen",
+      "bonuses": "+ Capacity, +% Red Pollen"
+    },
+    {
+      "name": "Warm Scarf",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Energy",
+      "bonuses": "+% Red Field Capacity, +% White Field Capacity, +% Capacity"
+    },
+    {
+      "name": "Peppermint Antennas",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Gather Amount, +% Movespeed, +% Ability Rate, +% Ability Pollen",
+      "bonuses": "+% Bee Ability Rate"
+    },
+    {
+      "name": "Beesmas Top",
+      "type": "beequip",
+      "buffs": "+% Critical Chance, +% Ability Rate, +% Energy, + Attack",
+      "debuffs": "-% Energy",
+      "bonuses": "+% Critical Power"
+    },
+    {
+      "name": "Pinecone",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Ability Rate",
+      "bonuses": "+% Pine Tree Forest Capacity, +% Pine Tree Forest Pollen"
+    },
+    {
+      "name": "Icicles",
+      "type": "beequip",
+      "buffs": "+% Attack, +% Blue Bomb Pollen",
+      "bonuses": "+% Cactus Field Pollen, +% Blue Bomb Pollen, +% Monster Respawn Time"
+    },
+    {
+      "name": "Beesmas Tree Hat",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Critical Chance, +% Ability Pollen, +% Ability Rate",
+      "bonuses": "+ Capacity, +% Convert Rate At Hive"
+    },
+    {
+      "name": "Bubble Light",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, + Movespeed, +% Bubble Pollen, +% Mark Duration",
+      "bonuses": "+% Bubble Pollen, +% Bee Movespeed"
+    },
+    {
+      "name": "Snow Tiara",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Convert At Hive, +% Blue Gather Amount, +% White Gather Amount, +% Critical Chance",
+      "bonuses": "+% Blue Field Capacity, +% White Field Capacity, +% Honey From Tokens"
+    },
+    {
+      "name": "Snowglobe",
+      "type": "beequip",
+      "buffs": "+% Bomb Pollen, +% Ability Rate",
+      "ability": "+Ability: Snowglobe Shake",
+      "bonuses": "+% Bomb Pollen"
+    },
+    {
+      "name": "Reindeer Antlers",
+      "type": "beequip",
+      "buffs": "+% Convert Amount, +% Ability Pollen",
+      "ability": "+Ability: Focus, +Ability: Reindeer Fetch, +Ability: Baby Love",
+      "bonuses": "+% Capacity, +% Bond From Treats"
+    },
+    {
+      "name": "Toy Horn",
+      "type": "beequip",
+      "buffs": "+ Convert Amount, +% Ability Pollen, +% Ability Rate",
+      "debuffs": "-% Energy",
+      "ability": "+Ability: Melody",
+      "bonuses": "+% Bee Ability Pollen, +% Convert Rate"
+    },
+    {
+      "name": "Paper Angel",
+      "type": "beequip",
+      "buffs": "+% White Gather, +% Ability Pollen",
+      "ability": "+Ability: Token Link",
+      "bonuses": "+% Ability Token Lifespan, +% Bee Ability Pollen"
+    },
+    {
+      "name": "Toy Drum",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, +% Attack, +% Critical Chance",
+      "debuffs": "-% Energy",
+      "ability": "+Ability: Haste",
+      "bonuses": "+% Bee Ability Pollen"
+    },
+    {
+      "name": "Lump Of Coal",
+      "type": "beequip",
+      "buffs": "+% Bomb Pollen",
+      "debuffs": "-% Energy, +% Movespeed",
+      "bonuses": "+% Bomb Pollen, +% Buzz Bomb Pollen, +% Blue Bomb Pollen, +% Red Bomb Pollen, +% Pollen, +% White Pollen, +% Red Pollen, +% Blue Pollen"
+    },
+    {
+      "name": "Poinsettia",
+      "type": "beequip",
+      "buffs": "+% Red Gather Amount, +% Gather Pollination Chance",
+      "bonuses": "+% Bee Gather Pollen, +% Red Pollen"
+    },
+    {
+      "name": "Electric Candle",
+      "type": "beequip",
+      "buffs": "+ Red Gather Amount, +% Flames Pollen, +% Gathering Flames Chance, +% Energy",
+      "bonuses": "+% Flames Pollen"
+    },
+    {
+      "name": "Festive Wreath",
+      "type": "beequip",
+      "buffs": "+ Gather Amount, + Convert Amount, +% Red Bomb Pollen, +% Mark Duration, +% Ability Rate",
+      "ability": "+Ability: Festive Mark",
+      "bonuses": "+% Capacity, +% Ticket Chance, +% Red Bee Convert Rate, +% Honey At Hive"
+    }
+  ]
+}

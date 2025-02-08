@@ -1,4 +1,4 @@
-import { stickerData } from '@/app/lib/stickerData';
+import { stickerData } from '@/app/lib/data/stickerData';
 import {
     DialogBackdrop,
     DialogBody,
@@ -38,12 +38,12 @@ export const ItemListDialog = ({ trigger, onItemSelect }: {
                                 lg: "repeat(6, 1fr)",
                                 xl: "repeat(8, 1fr)"
                             }} gap={2}>
-                                {Object.entries(stickers).map(([name, path]) => (
+                                {Object.entries(stickers).map(([name, data]) => (
                                     <GridItem key={name} display="flex" alignItems="center" mb={2}>
                                         <Button onClick={() => {
                                             onItemSelect(name);
                                         }} w="100%" p={0} variant="ghost" h="100%">
-                                            <Image src={path} alt={name} mr={2} width="100%" />
+                                            <Image src={data.image} alt={name} mr={2} width="100%" />
                                         </Button>
                                     </GridItem>
                                 ))}

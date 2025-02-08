@@ -1,4 +1,4 @@
-export const stickerData = {
+const stickerData = {
     'Hive Stickers': {
         'Small Flame': 'assets/stickers/Small Flame.png',
         'Reniform Leaf': 'assets/stickers/Reniform Leaf.png',
@@ -235,6 +235,7 @@ export const stickerData = {
         'Jack-O-Lantern': 'assets/stickers/Jack-O-Lantern.png',
         'Rake': 'assets/stickers/Rake.png',
         'Simple Sun': 'assets/stickers/Simple Sun.png',
+        'Stranded Sun Bear': 'assets/stickers/Stranded Sun Bear.png',
         'Festive Pea': 'assets/stickers/Festive Pea.png',
         'Pizza Delivery Man': 'assets/stickers/Pizza Delivery Man.png',
         'Vacuum': 'assets/stickers/Vacuum.png',
@@ -273,6 +274,7 @@ export const stickerData = {
         'Wavy Yellow Hive Skin': 'assets/hive_skins/Wavy Yellow Hive Skin.png',
         'Wavy Festive Hive Skin': 'assets/hive_skins/Wavy Festive Hive Skin.png',
         'Wavy Purple Hive Skin': 'assets/hive_skins/Wavy Purple Hive Skin.png',
+        'Icy Crowned Hive Skin': 'assets/hive_skins/Icy Crowned Hive Skin.png',
     },
     'Cub Skins': {
         'Gingerbread Cub Skin': 'assets/cub_skins/Gingerbread Cub Skin.png',
@@ -289,7 +291,67 @@ export const stickerData = {
     'Vouchers': {
         'Cub Buddy Voucher': 'assets/vouchers/Cub Buddy Voucher.png',
         'x2 Bee Gather Voucher': 'assets/vouchers/x2 Bee Gather Voucher.png',
-        'x2 Convert Speed': 'assets/vouchers/x2 Convert Speed.png',
+        'x2 Convert Speed Voucher': 'assets/vouchers/x2 Convert Speed.png',
         'Bear Bee Voucher': 'assets/vouchers/Bear Bee Voucher.png',
     },
 };
+
+const data = JSON.parse(require('fs').readFileSync('data.json', 'utf8')).stickers;
+// format:
+/*
+    {
+      "name": "",
+      "stack": "",
+      "reward": "",
+      "field": ""
+    },
+ */
+// instructions: remove the "(" and ")" from stack and reward. split field by comma.
+// field might not exist, so check for that.
+
+const stickers = data.map((sticker) => {
+    const { name, stack, reward, field } = sticker;
+    return {
+        name,
+        stack: stack.replace('(', '').replace(')', ''),
+        reward: reward.replace('(', '').replace(')', ''),
+        field: field ? field.split(',') : [],
+    };
+});
+
+/* format:
+    {
+      "name": "",
+      "stack": "",
+      "reward": "",
+      "field": []
+      "image": ""
+    },
+ */
+const finalStickerData = {
+    'Hive Stickers': {},
+    'Hive Skins': {},
+    'Cub Skins': {},
+    'Vouchers': {},
+}
+// combine stickers and stickerData to get the finalStickerData
+stickers.forEach((sticker) => {
+    const { name, stack, reward, field } = sticker;
+    let image = '';
+    let catName = '';
+    for (const cName in stickerData) {
+        if (name in stickerData[cName]) {
+            image = stickerData[cName][name];
+            catName = cName;
+            break;
+        }
+    }
+    finalStickerData[catName][name] = {
+        stack,
+        reward,
+        field,
+        image,
+    };
+});
+
+require('fs').writeFileSync('finalStickerData.json', JSON.stringify(finalStickerData, null, 2));
