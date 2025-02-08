@@ -12,7 +12,6 @@ import {
 import React from 'react';
 import { Box, Button, Grid, GridItem, Heading, Image } from '@chakra-ui/react';
 
-
 export const ItemListDialog = ({ trigger, onItemSelect }: {
     trigger: React.ReactNode;
     onItemSelect: (item: string) => void;
