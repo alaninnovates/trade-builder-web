@@ -9,7 +9,7 @@ export const BeequipPotentialInput = ({ potential, setPotential }: {
         <HStack gap={1}>
             {new Array(5).fill(0).map((_, i) => (
                 <Box key={i} onClick={() => setPotential(i + 1)}>
-                    {i < potential ? <FaStar size={24}/> : <FaRegStar size={24}/>}
+                    {i < potential ? <FaStar size={32}/> : <FaRegStar size={32}/>}
                 </Box>
             ))}
         </HStack>

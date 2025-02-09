@@ -10,7 +10,7 @@ export const BeequipInput = ({ data, setData }: {
     setData: (data: BeequipInputData) => void;
 }) => {
     return (
-        <VStack>
+        <VStack gap={4}>
             <BeequipPotentialInput potential={data.potential} setPotential={(potential) => {
                 setData({
                     ...data,
@@ -23,19 +23,19 @@ export const BeequipInput = ({ data, setData }: {
                         ...data,
                         buffs,
                     });
-                }}/>
+                }} color="green.500"/>
                 <BeequipNumberInputCollection data={data.debuffs} setData={(debuffs) => {
                     setData({
                         ...data,
                         debuffs,
                     });
-                }}/>
+                }} color="red.500"/>
                 <BeequipNumberInputCollection data={data.bonuses} setData={(bonuses) => {
                     setData({
                         ...data,
                         bonuses,
                     });
-                }}/>
+                }} color="yellow.500"/>
                 <BeequipBooleanInputCollection data={data.ability} setData={(ability) => {
                     setData({
                         ...data,

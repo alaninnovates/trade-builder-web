@@ -10,7 +10,9 @@ export const BeequipWaxInput = ({ waxes, setWaxes }: {
         <VStack>
             <HStack gap={1}>
                 {waxes.map((wax, i) => (
-                    <Box key={i} bg="gray.200" borderRadius="sm" p={2}>
+                    <Box key={i} bg="gray.200" borderRadius="sm" p={2} onClick={() => {
+                        setWaxes(waxes.map((w, j) => i === j ? '' : w).filter(Boolean) as WaxType[]);
+                    }}>
                         <Image src={'/' + waxData[wax].image} alt={wax} w={8} h={8}/>
                     </Box>
                 ))}
@@ -24,11 +26,7 @@ export const BeequipWaxInput = ({ waxes, setWaxes }: {
                 {(Object.keys(waxData) as WaxType[]).map((wax, i) => (
                     <Box key={i}
                          onClick={() => {
-                             if (waxes.includes(wax)) {
-                                 setWaxes(waxes.filter((w) => w !== wax));
-                             } else {
-                                 setWaxes([...waxes, wax]);
-                             }
+                             setWaxes([...waxes, wax]);
                          }}>
                         <Image src={'/' + waxData[wax].image} alt={wax} w={8} h={8}/>
                     </Box>
