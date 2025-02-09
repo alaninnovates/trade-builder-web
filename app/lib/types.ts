@@ -1,11 +1,22 @@
 import { ObjectId } from 'bson';
 
+export type WaxType = "Soft Wax" | "Hard Wax" | "Caustic Wax" | "Swirled Wax";
+
+export interface BeequipInputData {
+	buffs: Record<string, number>;
+	debuffs: Record<string, number>;
+	ability: Record<string, boolean>;
+	bonuses: Record<string, number>;
+	potential: number;
+	waxes: WaxType[];
+}
+
 export interface Trade {
 	lookingFor: {
-		[key: string]: number;
+		[key: string]: number | BeequipInputData;
 	};
 	offering: {
-		[key: string]: number;
+		[key: string]: number | BeequipInputData;
 	};
 }
 

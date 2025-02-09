@@ -2010,7 +2010,7 @@ export const stickerData = {
             'stack': '+10 Convert Rate',
             'reward': '1 Enzymes',
             'field': [],
-            'image': 'assets/vouchers/x2 Convert Speed.png',
+            'image': 'assets/vouchers/x2 Convert Speed Voucher.png',
         },
     },
 } as Record<StickerCategory, Record<string, StickerData>>;

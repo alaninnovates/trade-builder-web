@@ -2,7 +2,7 @@
 import { Trade as TradeType } from '@/app/lib/types';
 import { Trade } from '@/app/ui/trade/Trade';
 import { Box, Button, Center, CenterProps, Flex, Group, Text } from '@chakra-ui/react';
-import { ItemListDialog } from '@/app/ui/trade/ItemListDialog';
+import { ItemListPopover } from '@/app/ui/trade/ItemListPopover';
 import React from 'react';
 
 export const TradeEditor = ({ trade, setTrade, ...props }: {
@@ -20,15 +20,25 @@ export const TradeEditor = ({ trade, setTrade, ...props }: {
                 <Box flex={1} display="flex" flexDir={{ base: 'column', lg: 'row' }} gap={4}>
                     <Text hideFrom="lg" textAlign="center">Offering</Text>
                     <Group flex={1} justifyContent={{ base: 'center', lg: 'flex-start' }}>
-                        <ItemListDialog trigger={<Button>Add Item</Button>} onItemSelect={(item) => {
-                            setTrade({
-                                ...trade,
-                                offering: {
-                                    ...trade.offering,
-                                    [item]: (trade.offering[item] || 0) + 1,
-                                },
-                            });
-                        }}/>
+                        <ItemListPopover trigger={<Button>Add Item</Button>} onItemSelect={(item, data) => {
+                            if (data != null) {
+                                setTrade({
+                                    ...trade,
+                                    offering: {
+                                        ...trade.offering,
+                                        [item]: data,
+                                    },
+                                });
+                            } else {
+                                setTrade({
+                                    ...trade,
+                                    offering: {
+                                        ...trade.offering,
+                                        [item]: (trade.offering[item] as number || 0) + 1,
+                                    },
+                                });
+                            }
+                        }} side={'left'}/>
                         <Button onClick={() => {
                             setTrade((trade) => ({
                                 ...trade,
@@ -46,15 +56,25 @@ export const TradeEditor = ({ trade, setTrade, ...props }: {
                 <Box flex={1} display="flex" flexDir={{ base: 'column', lg: 'row' }} gap={4}>
                     <Text hideFrom="lg" textAlign="center">Looking For</Text>
                     <Group flex={1} justifyContent={{ base: 'center', lg: 'flex-end' }}>
-                        <ItemListDialog trigger={<Button>Add Item</Button>} onItemSelect={(item) => {
-                            setTrade({
-                                ...trade,
-                                lookingFor: {
-                                    ...trade.lookingFor,
-                                    [item]: (trade.lookingFor[item] || 0) + 1,
-                                },
-                            });
-                        }}/>
+                        <ItemListPopover trigger={<Button>Add Item</Button>} onItemSelect={(item, data) => {
+                            if (data != null) {
+                                setTrade({
+                                    ...trade,
+                                    lookingFor: {
+                                        ...trade.lookingFor,
+                                        [item]: data,
+                                    },
+                                });
+                            } else {
+                                setTrade({
+                                    ...trade,
+                                    lookingFor: {
+                                        ...trade.lookingFor,
+                                        [item]: (trade.lookingFor[item] as number || 0) + 1,
+                                    },
+                                });
+                            }
+                        }} side={'right'}/>
                         <Button onClick={() => {
                             setTrade((trade) => ({
                                 ...trade,

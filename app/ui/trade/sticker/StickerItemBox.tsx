@@ -2,7 +2,7 @@ import { Box, Float, Image, Show, Text } from '@chakra-ui/react';
 import { CloseButton } from '@/components/ui/close-button';
 import { getItemImage } from '@/app/lib/data/data';
 
-export const ItemBox = ({ item, quantity, editable, onRemove }: {
+export const StickerItemBox = ({ item, quantity, editable, onRemove }: {
     item: string;
     quantity: number;
     editable: boolean;

@@ -1,8 +1,9 @@
 import { Trade as TradeType } from '@/app/lib/types';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { Box, Flex, Grid, Icon, Text } from '@chakra-ui/react';
-import { ItemBox } from '@/app/ui/trade/ItemBox';
+import { StickerItemBox } from '@/app/ui/trade/sticker/StickerItemBox';
 import { fonts } from '@/app/fonts';
+import { BeequipItemBox } from '@/app/ui/trade/beequip/BeequipItemBox';
 
 export const Trade = ({ trade, editable, onItemRemove }: {
     trade: TradeType,
@@ -28,13 +29,27 @@ export const Trade = ({ trade, editable, onItemRemove }: {
             <Flex p={4} gap={4} flexDir={{ base: 'column', lg: 'row' }}>
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
-                    {Object.entries(trade.offering).map(([item, quantity]) => (
-                        <ItemBox key={item} item={item} quantity={quantity} editable={editable ?? false} onRemove={() => {
-                            if (onItemRemove) {
-                                onItemRemove('offering', item);
-                            }
-                        }}/>
-                    ))}
+                    {Object.entries(trade.offering).map(([item, data]) => {
+                        if (typeof data === 'number') {
+                            return (
+                                <StickerItemBox key={item} item={item} quantity={data} editable={editable ?? false}
+                                                onRemove={() => {
+                                                    if (onItemRemove) {
+                                                        onItemRemove('offering', item);
+                                                    }
+                                                }}/>
+                            );
+                        } else {
+                            return (
+                                <BeequipItemBox key={item} item={item} data={data} editable={editable ?? false}
+                                                onRemove={() => {
+                                                    if (onItemRemove) {
+                                                        onItemRemove('offering', item);
+                                                    }
+                                                }}/>
+                            );
+                        }
+                    })}
                 </Grid>
                 <Flex flexDir="column" alignItems="center" justifyContent="center" gap={2}>
                     <Icon asChild width={12} height={12} color="green.500">
@@ -46,13 +61,27 @@ export const Trade = ({ trade, editable, onItemRemove }: {
                 </Flex>
                 <Grid flex={1} bg="#FEBC2B" rounded="lg" p={4} border="2px solid black"
                       gridTemplateColumns="1fr 1fr 1fr" gap={4}>
-                    {Object.entries(trade.lookingFor).map(([item, quantity]) => (
-                        <ItemBox key={item} item={item} quantity={quantity} editable={editable ?? false} onRemove={() => {
-                            if (onItemRemove) {
-                                onItemRemove('lookingFor', item);
-                            }
-                        }}/>
-                    ))}
+                    {Object.entries(trade.lookingFor).map(([item, data]) => {
+                        if (typeof data === 'number') {
+                            return (
+                                <StickerItemBox key={item} item={item} quantity={data} editable={editable ?? false}
+                                                onRemove={() => {
+                                                    if (onItemRemove) {
+                                                        onItemRemove('lookingFor', item);
+                                                    }
+                                                }}/>
+                            );
+                        } else {
+                            return (
+                                <BeequipItemBox key={item} item={item} data={data} editable={editable ?? false}
+                                                onRemove={() => {
+                                                    if (onItemRemove) {
+                                                        onItemRemove('lookingFor', item);
+                                                    }
+                                                }}/>
+                            );
+                        }
+                    })}
                 </Grid>
             </Flex>
         </Box>

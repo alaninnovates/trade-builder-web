@@ -1,3 +1,5 @@
+import { BeequipInputData } from '@/app/lib/types';
+
 export const beequipData = {
     "Thimble": {
         "buffs": [
@@ -694,6 +696,18 @@ interface BeequipData {
     image: string;
 }
 
-export const getBeequipData = (sticker: string) => {
-    return beequipData[sticker];
+export const getBeequipData = (beequip: string) => {
+    return beequipData[beequip];
 };
+
+export const getBeequipInputDefaults = (beequip: string): BeequipInputData => {
+    const data = getBeequipData(beequip);
+    return {
+        buffs: Object.fromEntries(data.buffs.map(b => [b, 0])),
+        debuffs: Object.fromEntries(data.debuffs.map(b => [b, 0])),
+        ability: Object.fromEntries(data.ability.map(b => [b, false])),
+        bonuses: Object.fromEntries(data.bonuses.map(b => [b, 0])),
+        potential: 0,
+        waxes: [],
+    };
+}

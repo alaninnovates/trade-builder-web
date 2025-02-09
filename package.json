@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@auth/mongodb-adapter": "^3.7.4",
-    "@chakra-ui/react": "^3.5.1",
+    "@chakra-ui/react": "^3.7.0",
     "@emotion/react": "^11.13.3",
     "arctic": "^3.2.1",
     "mongodb": "^6.12.0",
