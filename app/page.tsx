@@ -14,6 +14,9 @@ export default function Home() {
                     <a href="/login/discord">
                         <Button type="button">Sign in with Discord</Button>
                     </a>
+                    <a href="/home">
+                        <Text fontSize="sm">Or continue as a guest</Text>
+                    </a>
                 </Card.Footer>
             </Card.Root>
         </Center>
