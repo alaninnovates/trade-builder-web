@@ -8,7 +8,20 @@ export const UserPill = async () => {
     const { user } = await getCurrentSession();
 
     if (user === null) {
-        return null;
+        return (
+            <a href="/login/discord">
+                <Button h="auto" py={2} px={6} variant="ghost">
+                    <HStack gap="3">
+                        <Avatar shape="rounded"/>
+                        <Stack gap="1" align="flex-start" hideBelow="lg">
+                            <Text fontWeight="medium" lineHeight="1">
+                                Sign in!
+                            </Text>
+                        </Stack>
+                    </HStack>
+                </Button>
+            </a>
+        );
     }
 
     return (
