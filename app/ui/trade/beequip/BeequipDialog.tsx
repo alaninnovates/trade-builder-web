@@ -7,31 +7,37 @@ import {
     DialogHeader,
     DialogRoot,
     DialogTitle,
-    DialogTrigger,
 } from '@/components/ui/dialog';
 import { getBeequipInputDefaults } from '@/app/lib/data/beequipData';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Button, Code } from '@chakra-ui/react';
 import { BeequipInput } from '@/app/ui/trade/beequip/BeequipInput';
 import { BeequipInputData } from '@/app/lib/types';
 
-export const BeequipDialog = ({ beequip, trigger, onSubmit }: {
-    beequip: string;
-    trigger: React.ReactNode;
+export const BeequipDialog = ({ open, setOpen, currentBeequip, onSubmit }: {
+    open: boolean;
+    setOpen: (open: boolean) => void;
+    currentBeequip: string | null;
     onSubmit: (data: BeequipInputData) => void;
 }) => {
-    const [open, setOpen] = useState(false);
-    const [data, setData] = useState<BeequipInputData>(getBeequipInputDefaults(beequip));
+    const [data, setData] = useState<BeequipInputData | null>();
+
+    useEffect(() => {
+        if (currentBeequip) {
+            setData(getBeequipInputDefaults(currentBeequip));
+        }
+    }, [currentBeequip]);
+
+    if (!data) {
+        return null;
+    }
 
     return (
         <DialogRoot placement="center" size="lg" open={open} onOpenChange={(e) => setOpen(e.open)}>
             <DialogBackdrop />
-            <DialogTrigger asChild>
-                {trigger}
-            </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Edit <Code size="lg">{beequip}</Code></DialogTitle>
+                    <DialogTitle>Edit <Code size="lg">{currentBeequip}</Code></DialogTitle>
                     <DialogCloseTrigger/>
                 </DialogHeader>
                 <DialogBody>
