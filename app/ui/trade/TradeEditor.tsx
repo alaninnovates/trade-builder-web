@@ -31,7 +31,7 @@ export const TradeEditor = ({ trade, setTrade, ...props }: {
     const sortedLookingFor = useMemo(() => Object.fromEntries(Object.entries(trade.lookingFor).sort(([a], [b]) => a.localeCompare(b))), [trade.lookingFor]);
 
     return (
-        <Center height="100%" flexDirection="column" gap={4} {...props}>
+        <Center height="100%" flexDirection="column" gap={4} {...props} zIndex="popover">
             <Trade trade={trade} editable={true} onItemRemove={handleItemRemove} />
             <Flex w="100%" maxW="3xl" flexDir={{ base: 'column', lg: 'row' }} gap={4}>
                 <Box flex={1} display="flex" flexDir={{ base: 'column', lg: 'row' }} gap={4}>
