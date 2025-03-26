@@ -79,7 +79,7 @@ export const ChatConversation = ({
 
     if (!person || !isConnected) return null;
     return (
-        <VStack w={'100%'} h={'100%'} flex={1} bg="background">
+        <VStack w={'100%'} h={'100%'} bg="background" flex={5 / 6} >
             <Box display="flex" alignItems="center" gap={3} p={4}>
                 <Avatar src={person.avatar}/>
                 <Box>
@@ -90,7 +90,7 @@ export const ChatConversation = ({
                 </Box>
             </Box>
             <Separator/>
-            <Box flex="1" overflowY="scroll" p={4} gap={4} w={'100%'} ref={chatboxRef}>
+            <Box flex="1" overflowY="scroll" p={4} gap={4} w={'100%'} ref={chatboxRef} scrollbarWidth="thin">
                 <Box display="flex" flexDirection="column" gap={4} p={4}>
                     {[...messages, ...laterMessages].map((msg, index) => (
                         <Box

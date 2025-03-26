@@ -17,10 +17,10 @@ export const PeopleList = ({
 	setActiveConversation: React.Dispatch<React.SetStateAction<string | null>>;
 }) => {
 	return (
-		<Box flex={1 / 3}>
+		<Box flex={1 / 6}>
 			<Text p={4}>Chats</Text>
 			<Separator />
-			<VStack gap={0} flex={1} overflowY="scroll" h={'80%'}>
+			<VStack gap={4} mt={4} flex={1} overflowY="scroll" h={'80%'} scrollbarWidth="thin">
 				{people.map((contact) => (
 					<Button
 						w="100%"
